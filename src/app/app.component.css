@@ -145,4 +145,149 @@ body {
   margin-left: 5px; /* Espaciado de 5px entre las imágenes */
 }
 
+/* Estilo para la sección de Misión, Visión y Valores */
+.mission-section {
+  background-color: #1b1b1b; /* Fondo oscuro */
+  color: #FFD700; /* Texto dorado */
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espacio entre las secciones */
+  align-items: center;
+  text-align: center; /* Centramos todo */
+}
+
+.mission-section h3 {
+  color: #FFFFFF;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #FFD700; /* Línea decorativa */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.mission-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px; /* Anchura máxima */
+  margin: 0 auto; /* Centrado automático */
+}
+
+.values-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Permite ajustar en pantallas pequeñas */
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #282828; /* Fondo diferente para cada ítem */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 250px; /* Tamaño controlado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+}
+
+.value-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.value-item p {
+  color: #FFD700; /* Texto dorado */
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.value-item strong {
+  color: #FFFFFF; /* Título en blanco */
+}
+
+.mission-section {
+  background-color: #1b1b1b; /* Fondo oscuro */
+  color: #FFD700; /* Texto dorado */
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espacio entre las secciones */
+  align-items: center;
+  text-align: center; /* Centramos todo */
+}
+
+.mission-section .mission-card .card {
+  background-color: #282828; /* Usar el mismo color de fondo que las tarjetas de valores */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Mayor espacio dentro de la card */
+  width: 100%; /* Ocupa el 100% del ancho disponible */
+  max-width: 1200px; /* Limita el ancho máximo a 1200px */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #ddd; /* Color principal */
+  font-size: 2.5em; /* Aumenta el tamaño del título */
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #FFD700; /* Texto dorado */
+  font-size: 1.2em; /* Aumenta el tamaño del texto */
+  line-height: 1.6;
+}
+
+/* Ajustar la disposición de las cards */
+.mission-section .values-list {
+  flex-wrap: wrap;
+  gap: 50px; /* Espacio entre las cards */
+  justify-content: center;
+  width: 100%;
+}
+
+/* Para pantallas más pequeñas, ajusta las cards para que ocupen más espacio */
+@media (max-width: 768px) {
+  .mission-section .mission-card .card {
+    width: 100%; /* En pantallas pequeñas, ocupa el 100% del contenedor */
+    max-width: 100%; /* Elimina el límite de ancho */
+  }
+}
+
+
+/* Mover la imagen de bienvenida a la izquierda */
+.welcome-image {
+  max-width: 300px;
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: flex-start; /* Cambiar de flex-end a flex-start */
+  align-items: center;
+  margin-bottom: 0;
+ 
+}
+
+/* Estilos para los iconos en la sección de Misión y Visión */
+.mission-section .card img,
+.values-list .value-item img {
+  width: 50px;  /* Ajusta este valor según el tamaño que prefieras */
+  height: 50px; /* Mantiene la proporción del icono */
+  margin-bottom: 15px; /* Espacio entre el icono y el texto */
+}
+
+/* Puedes ajustar el tamaño según tus necesidades */
+.mission-section .card img {
+  width: 50px;  /* Ajusta este valor para que sea igual a los iconos de valores */
+  height: 50px;
+}
 
