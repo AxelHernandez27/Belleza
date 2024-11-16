@@ -12,30 +12,31 @@ html, body {
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: #000000; /* Fondo negro oscuro */
+  background-color: #FFFFFF; /* Fondo negro oscuro */
   color: #FFD700; /* Dorado */
 }
 
 .navbar {
-  background-color: #000000; /* Negro oscuro */
+  background-color: #ffc0cb7d; /* Negro oscuro */
   color: #FFD700; /* Dorado */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  position: fixed;
+  position: static;
   width: 100%;
   z-index: 1000;
 }
 
 .navbar-logo img {
-  height: 100px;
+  height: 180px;
   margin-left: 100px;
 }
 
 .navbar-links a {
-  color: #FFD700;
-  text-decoration: none;
+  color: #000000;
+  text-decoration:solid;
+  font-family:Arial;
   margin: 0 10px;
   font-size: 1em;
   font-weight: 600;
@@ -44,7 +45,7 @@ body {
 }
 
 .navbar-links a:hover {
-  color: #FFF8DC;
+  color: #f8dc6c;
 }
 
 .welcome-container {
@@ -52,7 +53,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 120px 20px 0; /* Aseguramos que no haya padding inferior */
-  background-color: #000000;
+  background-color: #ffffff;
   height: auto;
   gap: 20px;
   overflow: hidden;
@@ -61,19 +62,20 @@ body {
 
 .welcome-card {
   flex: 0 0 60%; /* Ocupa el 50% del ancho del contenedor */
-  color: #FFD700; /* Dorado */
+  color: #FFC0CB; /* Dorado */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centrado vertical */
   text-align: left; /* Alinear texto a la izquierda */
   margin-bottom: 20px; /* Espacio inferior */
+  
 }
 
 .welcome-card h1 {
   font-size: 1.5em; /* Tamaño reducido */
   font-weight: 700;
-  margin: 0 0 10px;
-  color: #FFFFFF; /* Blanco */
+  margin: -250px 0 0px;
+  color: #0d0d0d; /* Blanco */
 }
 
 .welcome-card h2 {
@@ -86,9 +88,9 @@ body {
 .welcome-image {
   flex: 0 0 40%;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 0; /* Aseguramos que no haya margen inferior extra */
+  justify-content: left;
+  align-items:center;
+  margin-bottom: 10px; /* Aseguramos que no haya margen inferior extra */
 }
 
 .welcome-image img {
@@ -102,8 +104,8 @@ body {
   display: flex;
   justify-content: center; /* Centra las imágenes */
   padding: 60px 20px;
-  background-color: #1b1b1b; /* Gris más oscuro */
-  color: #FFD700;
+  background-color: #ffffff; /* Gris más oscuro */
+  color: #000000;
   margin-top: 0; /* Eliminar el margen superior */
 }
 
@@ -113,7 +115,7 @@ body {
 }
 
 .about-text h3 {
-  color: #FFFFFF;
+  color: #FFC0CB;
   font-size: 2.5em;
   font-weight: 700;
 }
@@ -147,8 +149,8 @@ body {
 
 /* Estilo para la sección de Misión, Visión y Valores */
 .mission-section {
-  background-color: #1b1b1b; /* Fondo oscuro */
-  color: #FFD700; /* Texto dorado */
+  background-color: #ffffff; /* Fondo oscuro */
+  color: #000000; /* Texto dorado */
   padding: 50px 20px;
   display: flex;
   flex-direction: column;
@@ -186,11 +188,11 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #282828; /* Fondo diferente para cada ítem */
+  background-color: #ffc0cb7d; /* Fondo diferente para cada ítem */
   padding: 20px;
   border-radius: 10px;
   max-width: 250px; /* Tamaño controlado */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Sombra elegante */
 }
 
 .value-item img {
@@ -200,7 +202,7 @@ body {
 }
 
 .value-item p {
-  color: #FFD700; /* Texto dorado */
+  color: #000000; /* Texto dorado */
   font-size: 1em;
   line-height: 1.5;
 }
@@ -210,8 +212,8 @@ body {
 }
 
 .mission-section {
-  background-color: #1b1b1b; /* Fondo oscuro */
-  color: #FFD700; /* Texto dorado */
+  background-color: #ffffff; /* Fondo oscuro */
+  color: #ffffff; /* Texto dorado */
   padding: 50px 20px;
   display: flex;
   flex-direction: column;
@@ -221,7 +223,7 @@ body {
 }
 
 .mission-section .mission-card .card {
-  background-color: #282828; /* Usar el mismo color de fondo que las tarjetas de valores */
+  background-color: #ffc0cb7d; /* Usar el mismo color de fondo que las tarjetas de valores */
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -238,13 +240,13 @@ body {
 }
 
 .card h3 {
-  color: #ddd; /* Color principal */
+  color: #ffffff; /* Color principal */
   font-size: 2.5em; /* Aumenta el tamaño del título */
   margin-bottom: 15px;
 }
 
 .card p {
-  color: #FFD700; /* Texto dorado */
+  color: #000000; /* Texto dorado */
   font-size: 1.2em; /* Aumenta el tamaño del texto */
   line-height: 1.6;
 }
