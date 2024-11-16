@@ -1,0 +1,134 @@
+/* Reset de márgenes y relleno */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Diseño del cuerpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f5f0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #FFD700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-logo img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #FFD700;
+  margin: 0 1rem;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #f1f1f1;
+}
+
+/* Contenedor principal de bienvenida */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem 2rem;
+  margin-top: 60px; /* Espacio para la navbar */
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner de bienvenida */
+.welcome-banner {
+  background: linear-gradient(135deg, #333, #555); /* Degradado elegante */
+  padding: 4rem 2rem;
+  color: #FFD700; /* Color dorado para destacar el texto */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.welcome-banner h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #FFD700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.welcome-banner p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  color: #f1f1f1;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sección Sobre Nosotros */
+.about-us {
+  padding: 2rem;
+  color: #333;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #D31B25; /* Tono rojo elegante */
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.about-us p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #555;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Efectos y transición */
+button {
+  padding: 0.8rem 2rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #D31B25;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a8141d;
+}
