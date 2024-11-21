@@ -9,44 +9,12 @@ html, body {
     font-family: 'Nunito', sans-serif;
     background-color: #FFFFFF; /* Fondo blanco */
     color: #FFD700; /* Texto dorado */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
   }
   
   /* Ocultar barras de desplazamiento */
   ::-webkit-scrollbar {
     display: none;
-  }
-  
-  /* Navbar */
-  .navbar {
-    background-color: #ffc0cb7d; /* Color rosa pálido */
-    color: #FFD700;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 15px;
-    position: static;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .navbar-logo img {
-    height: 120px;
-    margin-left: 50px;
-  }
-  
-  .navbar-links a {
-    color: #000000;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 0.9em;
-    font-weight: 600;
-    margin: 0 8px;
-    transition: color 0.3s ease;
-    margin-right: 80px;
-  }
-  
-  .navbar-links a:hover {
-    color: #f8dc6c;
   }
   
   /* Sección de bienvenida */
@@ -66,6 +34,7 @@ html, body {
     flex: 0 0 60%;
     text-align: left;
     margin-bottom: 30px;
+    padding-left: 40px;
   }
   
   .welcome-card h1 {
@@ -73,6 +42,7 @@ html, body {
     font-weight: 700;
     margin: 0;
     color: #0d0d0d;
+    padding-left: 40px;
   }
   
   .welcome-card h2 {
@@ -81,7 +51,7 @@ html, body {
     margin: 0;
     letter-spacing: 0.25em;
     color: #FFC0CB;
-    
+    padding-left: 40px;
   }
   
   .welcome-image {

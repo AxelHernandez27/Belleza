@@ -1,0 +1,189 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #ff66b2;
+}
+
+/* Contenedor de la galería */
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Aumentamos el tamaño mínimo de las cards */
+    gap: 20px; /* Mayor espacio entre las cards */
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Estilo de las cards */
+.card {
+    background-color: #fff;
+    border-radius: 20px; /* Bordes más redondeados en la card */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 750px; /* Aumentamos el tamaño máximo de la card */
+    margin: 0 auto; /* Centrar las cards */
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    height: 350px; /* Aumentamos la altura de las imágenes */
+    overflow: hidden;
+    margin-bottom: 15px; /* Espacio entre las dos imágenes */
+}
+
+.before-container,
+.after-container {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 0 10px; /* Espacio entre las imágenes */
+}
+
+.before-img,
+.after-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cubrir todo el espacio de la imagen sin distorsión */
+    border-radius: 20px; /* Bordes redondeados en las imágenes */
+    transition: transform 0.3s ease; /* Transición de animación */
+}
+
+/* Animación para la imagen "Antes" */
+.card:hover .before-img {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+/* Animación para la imagen "Después" */
+.card:hover .after-img {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+/* Etiquetas "Antes" y "Después" */
+.before-container .text,
+.after-container .text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: #ff66b2;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    z-index: 2;
+}
+
+/* Pie de la card */
+.card-title {
+    padding: 15px;
+    background-color: #ff66b2;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+}
+
+/* Efecto al pasar el ratón sobre la card */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustamos a 250px para pantallas más pequeñas */
+    }
+
+    .image-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .before-container,
+    .after-container {
+        width: 100%; /* Hace que cada imagen ocupe el 100% en pantallas pequeñas */
+        padding: 0; /* Elimina el padding */
+    }
+}
+
+/* Sección Multimedia */
+.multimedia {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.multimedia h1 {
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los videos */
+.video-container {
+    display: flex;
+    overflow-x: auto; /* Permite el deslizar horizontal */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.video-slide {
+    flex-shrink: 0;
+    width: 100%; /* Para hacer que cada video ocupe el 100% de su contenedor */
+    max-width: 200px; /* Máximo tamaño para cada video */
+    border-radius: 20px; /* Bordes redondeados en los videos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-item {
+    width: 100%; /* Videos ocupan el 100% del contenedor */
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el video */
+.video-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del video */
+}
+
+/* Para hacer que los videos sean responsivos */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column; /* Pone los videos en una columna en pantallas pequeñas */
+        gap: 10px;
+    }
+
+    .video-slide {
+        max-width: 100%; /* Los videos ocupan el 100% en pantallas pequeñas */
+    }
+}

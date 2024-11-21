@@ -22,4 +22,9 @@ export class AppComponent {
   ngAfterViewChecked() {
     AOS.refresh(); // Refresca AOS cuando el contenido cambia
   }
+
+  logClick(section: string) {
+    console.log(`Se hizo clic en: ${section}`);
+  }
+  
 }
