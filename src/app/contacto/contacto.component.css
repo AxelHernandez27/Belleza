@@ -1,0 +1,101 @@
+/* Contact Section Styling */
+.contact-container {
+    background: linear-gradient(135deg, #f3f3f3, #e9ecef);
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-card h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-card p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .social-media-links {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .social-link i {
+    font-size: 2rem;
+  }
+  
+  .social-link span {
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* Background Animations */
+  .social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    transition: left 0.3s ease;
+  }
+  
+  .social-link:hover::before {
+    left: 100%;
+  }
+  
+  /* Specific Social Media Colors */
+  .social-link.instagram {
+    background-color: #E4405F;
+  }
+  
+  .social-link.facebook {
+    background-color: #1877F2;
+  }
+   
+  .social-link.whatsapp {
+    background-color: #25D366;
+  }
+  
+  .social-link.email {
+    background-color: #D31B25;
+  }
+  
+  /* Hover Effects */
+  .social-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .social-link i {
+    transition: transform 0.3s ease;
+  }
+  
+  .social-link:hover i {
+    transform: rotate(15deg);
+  }
+  
