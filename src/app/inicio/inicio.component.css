@@ -1,0 +1,266 @@
+/* Configuración global */
+html, body {
+    height: 100%; /* Ocupa todo el alto disponible */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #FFD700; /* Texto dorado */
+  }
+  
+  /* Ocultar barras de desplazamiento */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #ffc0cb7d; /* Color rosa pálido */
+    color: #FFD700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    position: static;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-logo img {
+    height: 120px;
+    margin-left: 50px;
+  }
+  
+  .navbar-links a {
+    color: #000000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+    margin-right: 80px;
+  }
+  
+  .navbar-links a:hover {
+    color: #f8dc6c;
+  }
+  
+  /* Sección de bienvenida */
+  .welcome-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #ffffff7d;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    gap: 20px;
+  }
+  
+  .welcome-card {
+    flex: 0 0 60%;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .welcome-card h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+    color: #0d0d0d;
+  }
+  
+  .welcome-card h2 {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.25em;
+    color: #FFC0CB;
+    
+  }
+  
+  .welcome-image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    position: relative;
+    top: -10px;
+    left: 90px;
+  }
+  
+  .welcome-image img {
+    max-width: 70%;
+    border-radius: 5px;
+  }
+  
+  /* Sección Acerca de mí */
+  .about-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .about-text {
+    flex: 0 0 50%;
+    text-align: left;
+  }
+  
+  .about-text h3 {
+    color: #FFC0CB;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  
+  .about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .about-card {
+    background-color: #ffc0cb7d;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ffccd5;
+  }
+  
+  .about-card p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333333;
+    text-align: justify;
+  }
+  
+  .about-image img:first-child {
+    max-width: 45%;
+    margin-right: 5px;
+    transform: translateY(-15px);
+  }
+  
+  .about-image img:last-child {
+    max-width: 45%;
+    margin-left: 5px;
+  }
+  
+  /* Sección Misión, Visión y Valores */
+  .mission-section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .mission-section h3 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .mission-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .values-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    
+  }
+  
+  .value-item {
+    background-color: #ffc0cb7d;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .value-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .value-item p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .mission-section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px; /* Espaciado entre elementos */
+  }
+  
+  .mission-card {
+    background-color: #ffc0cb7d;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Más padding para un diseño más espacioso */
+    width: 100%;
+    max-width: 800px; /* Aumentamos el ancho máximo de las cards */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Espaciado entre las cards */
+  }
+  
+  .mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mission-card img {
+    max-width: 100px; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espaciado entre la imagen y el texto */
+  }
+  
+  @media (max-width: 768px) {
+    .mission-card img {
+      max-width: 80px; /* Tamaño reducido en pantallas pequeñas */
+    }
+  }
+  
+  
+  /* Adaptaciones para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .mission-section {
+      flex-direction: column; /* Coloca las tarjetas en columna */
+      align-items: center; /* Centra las tarjetas */
+    }
+  
+    .mission-card {
+      width: 100%; /* Asegura que ocupen el ancho disponible */
+    }
+  }
+  
+  
+  
+  
+  
