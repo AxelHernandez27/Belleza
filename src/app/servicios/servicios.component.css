@@ -1,0 +1,199 @@
+/* Configuración global */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #FFD700; /* Texto dorado */
+    overflow-x: hidden;
+  }
+  
+  /* Ocultar barras de desplazamiento */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Sección de bienvenida */
+  .welcome-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #ffffff7d;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    gap: 20px;
+  }
+  
+  .welcome-card {
+    flex: 0 0 60%;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 40px;
+  }
+  
+  .welcome-card h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+    color: #0d0d0d;
+    padding-left: 40px;
+  }
+  
+  .welcome-card h2 {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.25em;
+    color: #FFC0CB;
+    padding-left: 40px;
+  }
+  
+  .welcome-image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    position: relative;
+    top: -10px;
+    left: 90px;
+  }
+  
+  .welcome-image img {
+    max-width: 70%;
+    border-radius: 5px;
+  }
+
+  /* General container for the section */
+#about-services {
+  display: flex;
+  justify-content: flex-end; /* Mueve el contenido hacia la derecha */
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #fdf6f8; /* Fondo claro para mejor contraste */
+  border-radius: 10px;
+}
+
+/* Styling for the text block */
+.enhanced-about-text {
+  max-width: 500px; /* Limita el ancho para mejor lectura */
+  text-align: justify; /* Justifica el texto para un diseño elegante */
+  margin-right: 2rem; /* Espaciado adicional a la derecha */
+}
+
+.about-text h3 {
+  text-align: center; /* Título centrado */
+  color: #FFC0CB; /* Color del texto principal */
+  margin-bottom: 1rem;
+  font-size: 2rem; /* Tamaño del texto más grande */
+}
+
+.about-card {
+  background: #ffffff; /* Fondo blanco para resaltar el contenido */
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444; /* Texto más oscuro para mejor legibilidad */
+}
+
+.about-card p {
+  margin: 0;
+}
+
+  
+  /* Sección Maquillaje */
+  .makeup-section {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #ffc0cb7d;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .makeup-section h3 {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  .makeup-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .makeup-item {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .makeup-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .makeup-item img {
+    width: 100%; /* Ajusta el ancho al contenedor */
+    max-height: 200px; /* Define una altura máxima */
+    object-fit: contain; /* Mantén las proporciones originales de la imagen */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f8f8f8; /* Fondo neutro en caso de que la imagen no llene todo el espacio */
+  }
+  
+  
+  .makeup-info h4 {
+    font-size: 1.5em;
+    color: #FFC0CB;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .makeup-info p {
+    font-size: 1.2em;
+    color: #0d0d0d;
+    text-align: center;
+  }
+  
+  .makeup-info a {
+    font-size: 1em;
+    color: #FFD700;
+    text-decoration: none;
+  }
+  
+  .makeup-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Adaptaciones responsivas */
+  @media (max-width: 768px) {
+    .makeup-item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .makeup-item {
+      width: 100%;
+    }
+  }
+  

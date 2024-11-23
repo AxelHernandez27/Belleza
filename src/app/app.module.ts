@@ -7,6 +7,7 @@ import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AppRoutingModule } from './app.routes';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { AppRoutingModule } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

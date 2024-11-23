@@ -1,3 +1,7 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 /* Reset básico */
 * {
     margin: 0;
@@ -144,7 +148,7 @@ h1 {
 }
 
 .multimedia h1 {
-    color: #ff66b2;
+    color: #FFC0CB;
     margin-bottom: 20px;
 }
 
@@ -197,7 +201,7 @@ h1 {
   
   .section-title {
     font-size: 2.5rem;
-    color: #ff66b2;
+    color: #FFC0CB;
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
