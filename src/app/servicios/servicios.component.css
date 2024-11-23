@@ -197,3 +197,25 @@ html, body {
     }
   }
   
+  /* Estilos para el botón */
+button {
+  background-color: #FFC0CB; /* Color de fondo rosa claro */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno (alto y ancho) */
+  font-size: 1.2em; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  text-align: center; /* Centra el texto */
+  width: auto; /* El ancho se ajusta al contenido */
+  display: block; /* Hace que el botón sea un bloque */
+  margin: 20px auto; /* Centra el botón y le da un margen vertical */
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+  background-color: #ff99cc; /* Cambia el color de fondo cuando el mouse pasa por encima */
+  transform: scale(1.05); /* Hace que el botón crezca ligeramente */
+}

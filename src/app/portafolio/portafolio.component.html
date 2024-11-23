@@ -1,177 +1,72 @@
+<!-- Modal -->
+<div class="modal" *ngIf="isModalOpen">
+  <div class="modal-content">
+    <span class="close-btn" (click)="closeModal()">×</span>
+    
+    <div class="modal-images">
+      <div class="image-container">
+        <span class="image-label">Antes</span>
+        <img [src]="servicioSeleccionado?.antes" alt="Antes" class="modal-img">
+      </div>
+      <div class="image-container">
+        <span class="image-label">Después</span>
+        <img [src]="servicioSeleccionado?.despues" alt="Después" class="modal-img">
+      </div>
+    </div>
+    
+    <h2>{{servicioSeleccionado?.titulo}}</h2>
+  </div>
+</div>
+
+
+
 <!-- Sección Galería -->
 <section id="galeria" class="galeria">
   <h1 class="section-title"  data-aos="fade-up">✨ Mi Trabajo</h1>
   <p class="section-subtitle"  data-aos="fade-up">Descubre el arte detrás de cada transformación. Comparte la belleza del antes y después.</p>
   <div class="gallery"  data-aos="fade-up">
     <!-- Card 1 -->
-    <div class="card">
+    <div class="card" *ngFor="let item of album">
       <div class="image-container">
         <div class="before-container">
-          <img src="assets/socialDiaA.jpeg" alt="Maquillaje Social de Día - Antes" class="before-img">
+          <img [src]="item.antes" alt="{{item.titulo}} - Antes" class="before-img">
           <p class="text">Antes</p>
         </div>
         <div class="after-container">
-          <img src="assets/socialDiaD.jpeg" alt="Maquillaje Social de Día - Después" class="after-img">
+          <img [src]="item.despues" alt="{{item.titulo}} - Después" class="after-img">
           <p class="text">Después</p>
         </div>
       </div>
-      <p class="card-title">Maquillaje Social de Día</p>
+      <p class="card-title">{{item.titulo}}</p>
     </div>
-
-    <!-- Card 2 -->
-    <div class="card">
-      <div class="image-container">
-        <div class="before-container">
-          <img src="assets/socialNocheA.jpeg" alt="Maquillaje Social de Noche - Antes" class="before-img">
-          <p class="text">Antes</p>
-        </div>
-        <div class="after-container">
-          <img src="assets/socialNocheD.jpeg" alt="Maquillaje Social de Noche - Después" class="after-img">
-          <p class="text">Después</p>
-        </div>
-      </div>
-      <p class="card-title">Maquillaje Social de Noche</p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-      <div class="image-container">
-        <div class="before-container">
-          <img src="assets/smokeyEyesA.jpeg" alt="Maquillaje Smokey Eyes - Antes" class="before-img">
-          <p class="text">Antes</p>
-        </div>
-        <div class="after-container">
-          <img src="assets/smokeyEyesD.jpeg" alt="Maquillaje Smokey Eyes - Después" class="after-img">
-          <p class="text">Después</p>
-        </div>
-      </div>
-      <p class="card-title">Maquillaje Smokey Eyes</p>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card">
-      <div class="image-container">
-        <div class="before-container">
-          <img src="assets/pielMaduraHilosTensoresA.jpeg" alt="Maquillaje en Piel Madura con Hilos Tensores - Antes"
-            class="before-img">
-          <p class="text">Antes</p>
-        </div>
-        <div class="after-container">
-          <img src="assets/pielMaduraHilosTensoresD.jpeg" alt="Maquillaje en Piel Madura con Hilos Tensores - Después"
-            class="after-img">
-          <p class="text">Después</p>
-        </div>
-      </div>
-      <p class="card-title">Maquillaje en Piel Madura con Hilos Tensores</p>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="card">
-      <div class="image-container">
-        <div class="before-container">
-          <img src="assets/antesXV.jpeg" alt="Maquillaje de Novia Natural - Antes" class="before-img">
-          <p class="text">Antes</p>
-        </div>
-        <div class="after-container">
-          <img src="assets/despuesXV.jpeg" alt="Maquillaje de Novia Natural - Después" class="after-img">
-          <p class="text">Después</p>
-        </div>
-      </div>
-      <p class="card-title">Maquillaje de XV años</p>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="card">
-      <div class="image-container">
-        <div class="before-container">
-          <img src="assets/nupcialAntes.jpeg" alt="Maquillaje de Fiesta Colorida - Antes" class="before-img">
-          <p class="text">Antes</p>
-        </div>
-        <div class="after-container">
-          <img src="assets/nupcialNochedespues.jpeg" alt="Maquillaje de Fiesta Colorida - Después" class="after-img">
-          <p class="text">Después</p>
-        </div>
-      </div>
-      <p class="card-title">Maquillaje nupcial de noche</p>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="card">
-      <div class="image-container">
-        <div class="before-container">
-          <img src="assets/nupcialAntes.jpeg" alt="Maquillaje Glamour Clásico - Antes" class="before-img">
-          <p class="text">Antes</p>
-        </div>
-        <div class="after-container">
-          <img src="assets/nupcialDiaDespues.jpeg" alt="Maquillaje Glamour Clásico - Después" class="after-img">
-          <p class="text">Después</p>
-        </div>
-      </div>
-      <p class="card-title">Maquillaje nupcial de día</p>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="card">
-      <div class="image-container">
-        <div class="before-container">
-          <img src="assets/fullcolorAntes.jpeg" alt="Maquillaje Editorial Fantasía - Antes" class="before-img">
-          <p class="text">Antes</p>
-        </div>
-        <div class="after-container">
-          <img src="assets/fullcolorDespues.jpeg" alt="Maquillaje Editorial Fantasía - Después" class="after-img">
-          <p class="text">Después</p>
-        </div>
-      </div>
-      <p class="card-title">Maquillaje Full color</p>
-    </div>
-
-    <!-- Card 9 -->
-    <div class="card">
-      <div class="image-container">
-        <div class="before-container">
-          <img src="assets/nupcialAntes.jpeg" alt="Maquillaje Teatral - Antes" class="before-img">
-          <p class="text">Antes</p>
-        </div>
-        <div class="after-container">
-          <img src="assets/editorialDespues.jpeg" alt="Maquillaje Teatral - Después" class="after-img">
-          <p class="text">Después</p>
-        </div>
-      </div>
-      <p class="card-title">Maquillaje editorial con delineados gráficos.</p>
-    </div>
-
-    
   </div>
 </section>
 
-
-
-
-<!-- Sección de Videos o Multimedia -->
-<section id="multimedia" class="multimedia"  data-aos="fade-up">
-  <h1 class="section-title"  data-aos="fade-up">🎥 Mi Trabajo en Video</h1>
-  <p class="section-subtitle"  data-aos="fade-up">Explora mis mejores trabajos en maquillaje a través de videos. ¡Mira la magia en acción!</p>
-  <div class="video-container">
-    <div class="video-slide">
-      <video src="assets/video1.mp4" alt="Maquillaje" controls class="video-item"></video>
+<section id="multimedia" class="multimedia" data-aos="fade-up">
+  <h1 class="section-title" data-aos="fade-up">🎥 Mi Trabajo en Video</h1>
+  <p class="section-subtitle" data-aos="fade-up">Explora mis mejores trabajos en maquillaje a través de videos. ¡Mira la magia en acción!</p>
+  <div class="swiper video-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <video src="assets/video1.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video2.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video3.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video4.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video5.mp4" controls class="video-item"></video>
+      </div>
     </div>
-    <div class="video-slide">
-      <video src="assets/video2.mp4" alt="Maquillaje" controls class="video-item"></video>
-    </div>
-    <div class="video-slide">
-      <video src="assets/video3.mp4" alt="Maquillaje" controls class="video-item"></video>
-    </div>
-    <div class="video-slide">
-      <video src="assets/video4.mp4" alt="Maquillaje" controls class="video-item"></video>
-    </div>
-    <div class="video-slide">
-      <video src="assets/video5.mp4" alt="Maquillaje" controls class="video-item"></video>
-    </div>
-    <div class="video-slide">
-      <video src="assets/video6.mp4" alt="Maquillaje" controls class="video-item"></video>
-    </div>
-    <div class="video-slide">
-      <video src="assets/video7.mp4" alt="Maquillaje" controls class="video-item"></video>
-    </div>
+    <!-- Controles de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
   </div>
 </section>
+

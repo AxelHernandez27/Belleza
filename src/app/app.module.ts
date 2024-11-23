@@ -6,6 +6,8 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AppRoutingModule } from './app.routes';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { AppRoutingModule } from './app.routes';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    RouterModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
