@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 Swiper.use([Navigation, Pagination]);
 
