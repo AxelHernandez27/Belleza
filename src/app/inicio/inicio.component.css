@@ -194,102 +194,80 @@
 /* Adaptaciones para pantallas pequeñas */
 @media (max-width: 768px) {
   .welcome-container {
-    display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
+    flex-direction: column; /* Cambia a una columna en dispositivos más pequeños */
+    align-items: center; /* Centra los elementos */
+    padding: 0;
   }
 
   .welcome-card {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin: 10px 0; /* Agrega margen para separar las cards */
-    padding: 15px; /* Ajuste de padding */
-    box-sizing: border-box;
-  }
-
-  .welcome-card h1,
-  .welcome-card h2 {
-    font-size: 1.5em; /* Ajusta tamaño de texto */
+    padding-left: 0; /* Quita el padding en pantallas pequeñas */
     text-align: center; /* Centra el texto */
-    padding-left: 0;
   }
 
   .welcome-image {
-    max-width: 80%; /* La imagen no debe exceder el 80% del contenedor */
-    margin: 10px auto;
-    overflow: hidden;
+    flex: 1 1 100%; /* La imagen ocupa todo el ancho */
+    margin-top: 20px; /* Añade espacio superior */
   }
 
   .welcome-image img {
-    max-width: 100px; /* Imagen más pequeña */
-    height: auto;
-    border-radius: 5px;
+    max-width: 80%; /* Ajusta aún más la imagen en pantallas pequeñas */
   }
 
+  .welcome-card h2 {
+    font-size: 1.8em; /* Ajuste de tamaño para pantallas pequeñas */
+  }
   /* Sección Acerca de mí */
   .about-container {
-    display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
-    align-items: center;
-    padding: 20px;
-    gap: 20px; /* Espaciado entre los elementos */
+    flex-direction: column; /* Disposición en columna */
+    padding: 15px;
+    gap: 20px;
   }
 
   .about-text {
     text-align: justify;
-    font-size: 1rem; /* Tamaño de texto legible */
-    line-height: 1.5; /* Mejor legibilidad */
+    font-size: 1rem; /* Texto legible para pantallas pequeñas */
     padding: 0 10px;
-    width: 100%;
+  }
+
+  .about-card {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .about-image img {
-    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
     height: auto;
     border-radius: 10px;
   }
 
   /* Sección Misión, Visión y Valores */
   .mission-section {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    gap: 20px; /* Espaciado entre las cards */
+    gap: 20px;
   }
 
-  .values-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .value-item {
-    width: 100%;
+  .mission-card {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px;
     text-align: center;
   }
 
-  /* Cards de Misión, Visión y Valores */
-  .mission-card,
-  .vision-card,
-  .value-item {
-    width: 100%;
-    max-width: 300px;
-    min-width: 250px;
-    margin: 0 auto; /* Centra las cards */
-    padding: 20px; /* Espaciado interno */
+  .mission-card img {
+    width: 50px; /* Imagen más pequeña */
+    margin-bottom: 15px;
   }
 
-  .mission-card img,
-  .vision-card img {
-    max-width: 50px; /* Tamaño reducido de la imagen */
-    height: auto;
+  /* Valores individuales */
+  .value-item {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
+
 
 
