@@ -1,11 +1,11 @@
 /* Configuración global */
 html, body {
-  height: 100%; /* Ocupa todo el alto disponible */
   margin: 0; /* Elimina márgenes predeterminados */
   padding: 0; /* Elimina relleno predeterminado */
-  box-sizing: border-box;
   width: 100%;
-  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  max-width: 100%; /* Restringe cualquier elemento que esté excediendo el ancho */
+  box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
 }
 
 body {
@@ -32,17 +32,21 @@ body {
   box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
   z-index: 1000;
   overflow: hidden; /* Evita el scroll horizontal */
+  
 }
 
 .navbar-logo img {
-  height: 120px;
-  margin-left: 50px;
+  height: auto;
+  width: 120px; /* Asigna un ancho fijo pero manteniendo la proporción de la imagen */
   max-width: 100%; /* Asegura que no se estire más allá del ancho del contenedor */
+  margin-left: 50px;
 }
 
 .navbar-links {
   display: flex;
   gap: 15px; /* Espacio entre los enlaces */
+  flex-wrap: nowrap; /* No permitir que los enlaces se envuelvan */
+  justify-content: flex-start; /* Mantener los enlaces en una sola fila */
 }
 
 .navbar-links a {
@@ -62,21 +66,29 @@ body {
   color: #f8dc6c;
 }
 
-/* Ajuste para pantallas pequeñas */
+/* Ajuste para pantallas pequeñas (menos de 768px) */
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 5px; /* Ajusta el relleno para pantallas pequeñas */
+    justify-content: space-between; /* Mantiene la separación entre logo y enlaces */
+    overflow-x: auto; /* Permite desplazarse horizontalmente si es necesario */
   }
 
   .navbar-logo img {
-    height: 80px; /* Reducir el tamaño del logo en pantallas pequeñas */
+    width: 80px; /* Reducir el ancho del logo en pantallas pequeñas */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 20px; /* Reducir el margen izquierdo del logo */
   }
 
   .navbar-links {
-    gap: 10px; /* Reduce el espacio entre los enlaces */
+    gap: 15px; /* Mantiene el espacio entre los enlaces */
+    justify-content: flex-start; /* Asegura que los enlaces no se centren */
+    width: auto; /* No forzar el ancho de los enlaces */
+    padding-left: 20px; /* Añadir espacio a la izquierda para separar los enlaces del logo */
   }
 
   .navbar-links a {
-    font-size: 0.8em; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    font-size: 0.9em; /* Mantiene el tamaño de fuente sin reducción */
+    padding: 5px 10px; /* No se cambia el padding */
   }
 }
