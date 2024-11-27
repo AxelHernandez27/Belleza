@@ -1,3 +1,5 @@
+
+
 /* Sección de bienvenida */
 .welcome-container {
   display: flex;
@@ -9,14 +11,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 100px;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow: hidden;
   box-sizing: border-box; /* Incluye padding dentro del ancho */
 
 }
 
 .welcome-card {
-  flex: 1 1 60%;
+  flex: 0 1 60%;
   text-align: left;
   margin-bottom: 20px;
   padding-left: border-box;
@@ -42,7 +44,7 @@
 }
 
 .welcome-image {
-  flex: 1 1 35%;
+  flex: 0 1 35%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,20 +57,19 @@
 }
 
 .welcome-image img {
-  width: 100%;
-  max-width: 80%;
-  height: auto;
+  max-width: 70%;
   border-radius: 5px;
-  object-fit: cover;
 }
 
 /* Sección Acerca de mí */
 .about-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 60px 20px;
   background-color: #ffffff;
   color: #000000;
+  box-sizing: border-box; /* Asegura que el padding no sume al ancho total */
 }
 
 .about-text {
@@ -94,6 +95,8 @@
   padding: 20px;
   margin-top: 20px;
   border: 1px solid #ffccd5;
+  flex-shrink: 1; /* Permite que los elementos se ajusten mejor */
+  overflow: hidden;
 }
 
 .about-card p {
@@ -191,12 +194,11 @@
   margin-bottom: 20px; /* Espaciado entre la imagen y el texto */
 }
 
-/* Adaptaciones para pantallas pequeñas */
 @media (max-width: 768px) {
   .welcome-container {
     flex-direction: column; /* Cambia a una columna en dispositivos más pequeños */
     align-items: center; /* Centra los elementos */
-    padding: 0;
+    box-sizing: border-box;
   }
 
   .welcome-card {
@@ -216,58 +218,184 @@
   .welcome-card h2 {
     font-size: 1.8em; /* Ajuste de tamaño para pantallas pequeñas */
   }
-  /* Sección Acerca de mí */
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  .welcome-card {
+    flex: 1 1 100%; /* En pantallas medianas, la card ocupa todo el ancho */
+    padding-left: 20px; /* Reducción del padding para mejor ajuste */
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten mejor */
+  }
+
+  .welcome-image {
+    flex: 1 1 100%; /* La imagen ocupa todo el ancho */
+    justify-content: center;
+  }
+
+  .welcome-image img {
+    max-width: 90%; /* Se ajusta el tamaño de la imagen */
+  }
+
+  .welcome-card h2 {
+    font-size: 2em; /* Reducción del tamaño del título */
+  }
+}
+
+/* Estilos responsivos para la sección "Acerca de mí" */
+@media (max-width: 768px) {
   .about-container {
-    flex-direction: column; /* Disposición en columna */
-    padding: 15px;
-    gap: 20px;
+    flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+    align-items: center; /* Centra el contenido */
+    padding: 20px 10px; /* Reduce el padding */
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten mejor */
   }
 
   .about-text {
-    text-align: justify;
-    font-size: 1rem; /* Texto legible para pantallas pequeñas */
-    padding: 0 10px;
+    flex: 1 1 100%; /* Ocupa todo el ancho */
+    text-align: center; /* Centra el texto */
+    padding: 0 10px; /* Ajusta los márgenes */
+  }
+
+  .about-text h3 {
+    font-size: 1.8em; /* Reduce el tamaño del título */
+  }
+
+  .about-text p {
+    font-size: 1em; /* Reduce el tamaño del texto */
+    line-height: 1.4; /* Ajusta el interlineado */
   }
 
   .about-card {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Reduce el padding interno */
+    margin-top: 20px; /* Reduce el margen superior */
+    box-sizing: border-box;
   }
 
-  .about-image img {
-    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-    height: auto;
-    border-radius: 10px;
+  .about-card p {
+    font-size: 1em; /* Ajusta el tamaño del texto en la tarjeta */
+    line-height: 1.5; /* Ajusta el interlineado */
   }
 
-  /* Sección Misión, Visión y Valores */
+  .about-image img:first-child, 
+  .about-image img:last-child {
+    max-width: 40%; /* Ajusta el tamaño de las imágenes */
+    margin: 10px 0; /* Espaciado uniforme para las imágenes */
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h3 {
+    font-size: 1.5em; /* Reduce aún más el tamaño del título */
+  }
+
+  .about-text p {
+    font-size: 0.9em; /* Reduce aún más el tamaño del texto */
+  }
+
+  .about-card p {
+    font-size: 0.9em; /* Ajusta el tamaño del texto en la tarjeta */
+  }
+
+  .about-container {
+    padding: 15px 5px; /* Reduce aún más el padding general */
+  }
+}
+
+/* Estilos responsivos para la sección "Misión, Visión y Valores" */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
   .mission-section {
-    flex-direction: column;
-    gap: 20px;
+    padding: 30px 15px; /* Reduce el padding para dispositivos más pequeños */
+    text-align: center; /* Centra todo el texto */
+  }
+
+  .mission-section h3 {
+    font-size: 1.8em; /* Ajusta el tamaño del título */
+    margin-bottom: 10px; /* Reduce el margen inferior */
+  }
+
+  .mission-section p {
+    font-size: 1em; /* Reduce el tamaño del texto */
+    line-height: 1.4; /* Ajusta el interlineado */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 0 auto; /* Centra el texto */
   }
 
   .mission-card {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Reduce el padding interno */
+    max-width: 80%; /* Permite que ocupe todo el ancho */
+    margin-bottom: 15px; /* Reduce el margen entre tarjetas */
   }
 
   .mission-card img {
-    width: 50px; /* Imagen más pequeña */
-    margin-bottom: 15px;
+    max-width: 80px; /* Ajusta el tamaño de las imágenes */
+    margin-bottom: 15px; /* Espaciado entre imagen y texto */
   }
 
-  /* Valores individuales */
+  .values-list {
+    flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
+    gap: 15px; /* Reduce el espacio entre los elementos */
+  }
+
   .value-item {
-    width: 100%; /* Ocupa todo el ancho */
-    padding: 15px;
-    text-align: center;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 15px; /* Reduce el padding interno */
+  }
+
+  .value-item img {
+    width: 50px; /* Ajusta el tamaño de las imágenes */
+    height: 50px; /* Mantiene proporción */
+    margin-bottom: 10px; /* Reduce el margen inferior */
+  }
+
+  .value-item p {
+    font-size: 0.9em; /* Ajusta el tamaño del texto */
+    line-height: 1.4; /* Ajusta el interlineado */
   }
 }
+
+@media (max-width: 480px) {
+  .mission-section {
+    padding: 20px 10px; /* Ajusta aún más el padding */
+  }
+
+  .mission-section h3 {
+    font-size: 1.5em; /* Reduce aún más el tamaño del título */
+  }
+
+  .mission-section p {
+    font-size: 0.9em; /* Ajusta el texto para pantallas muy pequeñas */
+  }
+
+  .mission-card {
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .mission-card img {
+    max-width: 60px; /* Ajusta el tamaño de las imágenes */
+  }
+
+  .value-item {
+    padding: 10px; /* Reduce el padding interno */
+  }
+
+  .value-item img {
+    width: 40px; /* Ajusta el tamaño de las imágenes */
+    height: 40px;
+  }
+
+  .value-item p {
+    font-size: 0.8em; /* Reduce aún más el texto */
+  }
+}
+
 
 
 

@@ -3,6 +3,7 @@ html, body {
   margin: 0; /* Elimina márgenes predeterminados */
   padding: 0; /* Elimina relleno predeterminado */
   width: 100%;
+  overflow-y: hidden;
   overflow-x: hidden; /* Evita el scroll horizontal */
   max-width: 100%; /* Restringe cualquier elemento que esté excediendo el ancho */
   box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
