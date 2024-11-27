@@ -68,7 +68,7 @@ html, body {
 
 .welcome-image img {
   max-width: 70%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* Sección Acerca de mí */
@@ -120,11 +120,13 @@ html, body {
   max-width: 45%;
   margin-right: 5px;
   transform: translateY(-15px);
+  border-radius: 15px
 }
 
 .about-image img:last-child {
   max-width: 45%;
   margin-left: 5px;
+  border-radius: 15px
 }
 
 /* Sección Misión, Visión y Valores */
