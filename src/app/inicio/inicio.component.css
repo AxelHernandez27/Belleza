@@ -1,4 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
 
+* {
+  box-sizing: border-box;
+}
 
 /* Sección de bienvenida */
 .welcome-container {
@@ -41,6 +50,7 @@
   letter-spacing: 0.25em;
   color: #FFC0CB;
   padding-left: 40px;
+  margin-bottom: 10px;
 }
 
 .welcome-image {
@@ -224,9 +234,14 @@
 @media (max-width: 1024px) {
   .welcome-card {
     flex: 1 1 100%; /* En pantallas medianas, la card ocupa todo el ancho */
-    padding-left: 20px; /* Reducción del padding para mejor ajuste */
+    padding-left: 0; /* Eliminar padding izquierdo adicional */
     box-sizing: border-box;
     flex-wrap: wrap; /* Permite que los elementos se ajusten mejor */
+    display: flex; /* Flexbox para centrar el contenido */
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    text-align: center; /* Centrado del texto */
   }
 
   .welcome-image {
@@ -240,8 +255,11 @@
 
   .welcome-card h2 {
     font-size: 2em; /* Reducción del tamaño del título */
+    margin: 0; /* Eliminar márgenes innecesarios */
+    padding: 0; /* Eliminar padding adicional */
   }
 }
+
 
 /* Estilos responsivos para la sección "Acerca de mí" */
 @media (max-width: 768px) {
@@ -284,6 +302,7 @@
     max-width: 40%; /* Ajusta el tamaño de las imágenes */
     margin: 10px 0; /* Espaciado uniforme para las imágenes */
     box-sizing: border-box;
+    margin-left: 20px;
   }
 }
 
@@ -396,6 +415,6 @@
   }
 }
 
-
-
-
+[data-aos] {
+  overflow: hidden;
+}
