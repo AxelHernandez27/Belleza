@@ -82,6 +82,14 @@ html, body {
   box-sizing: border-box; /* Asegura que el padding no sume al ancho total */
 }
 
+.about-container img {
+  max-width: 100%; /* Ajusta la imagen al ancho máximo del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta cómo se escala la imagen si es necesario */
+  margin: 10px; /* Espaciado entre imágenes */
+  max-height: 300px; /* Opcional: límite de altura para que no sean demasiado altas */
+}
+
 .about-text {
   flex: 0 0 50%;
   text-align: left;
@@ -128,6 +136,83 @@ html, body {
   margin-left: 5px;
   border-radius: 15px
 }
+
+/* Sección certificaciones */
+/* Sección Certificados */
+.certificados {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.certificados h1 {
+  color: #FFC0CB; /* Color rosa claro */
+  margin-bottom: 20px;
+}
+
+/* Aseguramos que el swiper ocupe el ancho completo y ajuste bien las imágenes */
+.certificados-swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+  width: 100%; /* Cada slide ocupará todo el ancho del swiper */
+  display: flex;
+  justify-content: center;
+}
+
+.certificado-item {
+  width: 100%;  /* Asegura que la imagen ocupe el 100% del ancho disponible */
+  height: 100%; /* Asegura que la imagen ocupe toda la altura disponible */
+  object-fit: cover; /* Mantiene la proporción de la imagen y la ajusta al tamaño del contenedor */
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.certificado-item:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Controles de navegación */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  z-index: 10;
+}
+
+
+/* Responsividad para certificaciones */
+@media (max-width: 768px) {
+  .certifications-section {
+    padding: 30px 15px;
+  }
+
+  .certifications-section h3 {
+    font-size: 1.8em;
+  }
+
+  .certification-card {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .certification-card img {
+    max-width: 80px;
+  }
+
+  .certification-card h4 {
+    font-size: 1em;
+  }
+
+  .certification-card p {
+    font-size: 0.9em;
+  }
+}
+
+
 
 /* Sección Misión, Visión y Valores */
 .mission-section {

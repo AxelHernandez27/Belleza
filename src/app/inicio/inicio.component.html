@@ -1,65 +1,89 @@
 <main>
-    <!-- Hero Section -->
-    <section id="welcome" class="welcome-container" data-aos="fade-up">
-      <div class="welcome-card" data-aos="fade-up">
-        <h1>MAKEUP ARTIST</h1>
-        <br>
-        <h2>BIENVENIDA A<br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO</h2>
+  <!-- Hero Section -->
+  <section id="welcome" class="welcome-container" data-aos="fade-up">
+    <div class="welcome-card" data-aos="fade-up">
+      <h1>MAKEUP ARTIST</h1>
+      <br>
+      <h2>BIENVENIDA A<br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO</h2>
+    </div>
+    <div class="welcome-image" data-aos="fade-up">
+      <img src="assets/inicio.jpeg" alt="MakeUp Artistry">
+    </div>
+  </section>
+
+  <!-- Acerca de mí Section -->
+  <section id="about" class="about-container" data-aos="fade-up">
+    <div class="about-image">
+      <img src="assets/certificado1.jpeg" alt="Foto maquillaje 1">
+      <img src="assets/certificado2.jpeg" alt="Foto maquillaje 2">
+    </div>
+    <div class="about-text">
+      <h3>Acerca de mí</h3>
+      <div class="about-card">
+        <p>
+          Hola, soy Edith Manrique, artista de maquillaje certificada a nivel nacional e internacional, apasionada por
+          resaltar la belleza única de cada mujer.
+          Cuento con experiencia en maquillaje para pasarelas de Miss Guanajuato y editoriales. Me especializo en
+          técnicas modernas de maquillaje para cualquier ocasión, ofreciendo siempre una asesoría y un servicio
+          completamente personalizados, diseñados para ayudarte a tomar la mejor decisión y hacerte sentir más bella y
+          segura de ti misma!</p>
       </div>
-      <div class="welcome-image" data-aos="fade-up">
-        <img src="assets/inicio.jpeg" alt="MakeUp Artistry">
-      </div>
-    </section>
-  
-    <!-- Acerca de mí Section -->
-    <section id="about" class="about-container" data-aos="fade-up">
-      <div class="about-image">
-        <img src="assets/makeup1.png" alt="Foto maquillaje 1">
-        <img src="assets/makeup2.png" alt="Foto maquillaje 2">
-      </div>
-      <div class="about-text">
-        <h3>Acerca de mí</h3>
-        <div class="about-card">
-          <p>Hola, soy Edith Manrique. Soy una artista de maquillaje, certificada a nivel nacional e internacional, apasionada por resaltar la belleza única de cada mujer.
-            Cuento con experiencia en maquillaje para pasarelas de Miss Universo y editoriales. Me especializo en técnicas modernas de maquillaje para cualquier ocasión, buscando siempre ofrecer una asesoría y un servicio completamente personalizado, para ayudarte a tomar la mejor decisión y hacerte sentir más bella y segura de ti misma!</p>
+    </div>
+  </section>
+
+  <section id="certificados" class="certificados" data-aos="fade-up">
+    <h1 class="section-title" data-aos="fade-up">🎓 Conoce mis certificaciones y reconocimientos a nivel nacional e internacional!</h1>
+    <p class="section-subtitle" data-aos="fade-up">Explora mis certificados obtenidos en diversas áreas. ¡Conoce mis logros!</p>
+    <div class="swiper certificados-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let certificado of certificados">
+          <img [src]="certificado.imagen" [alt]="certificado.titulo" class="certificado-item" />
         </div>
       </div>
-    </section>
+      <!-- Controles de navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
   
-    <!-- Misión, Visión y Valores -->
-    <section id="mission-vision-values" class="mission-section" data-aos="fade-up">
-      <!-- Card Misión -->
-      <div class="mission-card" data-aos="fade-right">
-        <h3>Misión</h3>
-        <img src="assets/icono_mision.png" alt="Icono Misión">
-        <p>Proveer servicios de maquillaje profesional que realcen la belleza y confianza de nuestros clientas, utilizando productos de alta calidad y técnicas modernas.</p>
-      </div>
-  
-      <!-- Card Visión -->
-      <div class="mission-card" data-aos="fade-left">
-        <h3>Visión</h3>
-        <img src="assets/icono_vision.png" alt="Icono Visión">
-        <p>Ser reconocidos como el Estudio de maquillaje líder en la industria, ofreciendo experiencias únicas para hacerte lucir radiante.</p>
-      </div>
-  
-      <!-- Valores -->
-      <div class="values-section" data-aos="fade-up">
-        <h3>Valores</h3>
-        <div class="values-list">
-          <div class="value-item" data-aos="flip-up">
-            <img src="assets/icono_compromiso.png" alt="Icono Compromiso">
-            <p><strong>Compromiso:</strong> Dedicar lo mejor de nosotros para satisfacer las expectativas de nuestros clientes.</p>
-          </div>
-          <div class="value-item" data-aos="flip-down">
-            <img src="assets/icono_creatividad.png" alt="Icono Creatividad">
-            <p><strong>Creatividad:</strong> Innovar constantemente para ofrecer estilos únicos y modernos.</p>
-          </div>
-          <div class="value-item" data-aos="flip-left">
-            <img src="assets/icono_confianza.png" alt="Icono Confianza">
-            <p><strong>Confianza:</strong> Generar relaciones basadas en la honestidad y el profesionalismo.</p>
-          </div>
+
+  <!-- Misión, Visión y Valores -->
+  <section id="mission-vision-values" class="mission-section" data-aos="fade-up">
+    <!-- Card Misión -->
+    <div class="mission-card" data-aos="fade-right">
+      <h3>Misión</h3>
+      <img src="assets/icono_mision.png" alt="Icono Misión">
+      <p>Proveer servicios de maquillaje profesional que realcen la belleza y confianza de nuestros clientas, utilizando
+        productos de alta calidad y técnicas modernas.</p>
+    </div>
+
+    <!-- Card Visión -->
+    <div class="mission-card" data-aos="fade-left">
+      <h3>Visión</h3>
+      <img src="assets/icono_vision.png" alt="Icono Visión">
+      <p>Ser reconocidos como el Estudio de maquillaje líder en la industria, ofreciendo experiencias únicas para
+        hacerte lucir radiante.</p>
+    </div>
+
+    <!-- Valores -->
+    <div class="values-section" data-aos="fade-up">
+      <h3>Valores</h3>
+      <div class="values-list">
+        <div class="value-item" data-aos="flip-up">
+          <img src="assets/icono_compromiso.png" alt="Icono Compromiso">
+          <p><strong>Compromiso:</strong> Dedicar lo mejor de nosotros para satisfacer las expectativas de nuestros
+            clientes.</p>
+        </div>
+        <div class="value-item" data-aos="flip-down">
+          <img src="assets/icono_creatividad.png" alt="Icono Creatividad">
+          <p><strong>Creatividad:</strong> Innovar constantemente para ofrecer estilos únicos y modernos.</p>
+        </div>
+        <div class="value-item" data-aos="flip-left">
+          <img src="assets/icono_confianza.png" alt="Icono Confianza">
+          <p><strong>Confianza:</strong> Generar relaciones basadas en la honestidad y el profesionalismo.</p>
         </div>
       </div>
-    </section>
-  </main>
-  
+    </div>
+  </section>
+</main>
