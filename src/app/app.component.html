@@ -1,4 +1,3 @@
-<!-- Navbar -->
 <header class="navbar">
   <div class="navbar-logo">
     <img src="assets/Diseño_edith__2.png" alt="Edith Manrique MakeUp Artist Logo">
@@ -9,8 +8,15 @@
     <a routerLink="/portafolio" href="/portafolio">Portafolio</a>
     <a routerLink="/contacto" href="/contacto">Contacto</a>
   </nav>
+  
+  <!-- Mensaje de deslizar -->
+<div *ngIf="mostrarMensajeDesliza" class="mensaje-desliza">
+  <span>➡ Desliza la barra para ver más opciones ➡</span>
+</div>
 </header>
-<main>
-<router-outlet></router-outlet>
-</main>
 
+
+
+<main>
+  <router-outlet></router-outlet>
+</main>

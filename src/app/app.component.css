@@ -93,3 +93,28 @@ body {
     padding: 5px 10px; /* No se cambia el padding */
   }
 }
+.mensaje-desliza {
+  position: absolute; /* Ahora es relativo al contenedor */
+  top: 10%; /* Justo debajo del navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+  color: #fff; /* Texto blanco */
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000; /* Asegura que esté encima del contenido */
+  animation: deslizaAnimacion 1.5s infinite ease-in-out;
+}
+
+/* Animación para hacer el mensaje más dinámico */
+@keyframes deslizaAnimacion {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}

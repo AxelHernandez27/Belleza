@@ -1,30 +1,41 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import *as AOS from 'aos';
+import { CommonModule } from '@angular/common';
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Belleza';
-  ngOnInit():void{
+  mostrarMensajeDesliza = false;
+
+  ngOnInit(): void {
     AOS.init({
-      duration: 1200,  // Duración de la animación (en milisegundos)
-      once: true,      // Si quieres que las animaciones solo se activen una vez
-      easing: 'ease-out', // Define el tipo de easing (opcional)
-      offset: 120,     // La distancia desde la que se activa la animación al hacer scroll
+      duration: 1200,
+      once: true,
+      easing: 'ease-out',
+      offset: 120,
     });
+
+    // Verificar si el mensaje ya fue mostrado
+    const mensajeVisto = localStorage.getItem('mensajeDeslizaVisto');
+    if (!mensajeVisto) {
+      this.mostrarMensajeDesliza = true; // Mostrar el mensaje
+
+      // Ocultar el mensaje después de 5 segundos
+      setTimeout(() => {
+        this.mostrarMensajeDesliza = false;
+        localStorage.setItem('mensajeDeslizaVisto', 'true'); // Registrar que ya se mostró
+      }, 5000);
+    }
   }
 
   ngAfterViewChecked() {
-    AOS.refresh(); // Refresca AOS cuando el contenido cambia
+    AOS.refresh();
   }
-
-  logClick(section: string) {
-    console.log(`Se hizo clic en: ${section}`);
-  }
-  
 }
