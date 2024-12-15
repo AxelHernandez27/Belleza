@@ -69,11 +69,74 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     },
     {
       id: 9,
-      titulo: "Maquillaje Editorial",
-      antes: "assets/nupcialAntes.jpeg",
-      despues: "assets/editorialDespues.jpeg"
-    }
+      titulo: "Maquillaje Social",
+      antes: "assets/AntesmaquillajeSocial.jpeg",
+      despues: "assets/DespuesmaquillajeSocial.jpeg"
+    },
+    {
+      id: 10,
+      titulo: "Maquillaje Nupcial",
+      antes: "assets/Antesmaquillajenupcial.jpeg",
+      despues: "assets/Despuesmaquillajenupcial.jpeg"
+    },
+    {
+      id: 11,
+      titulo: "Maquillaje Social en Piel Madura",
+      antes: "assets/AntesmaquillajesSocialPielmadura.jpeg",
+      despues: "assets/DespuesmaquillajesSocialPielmadura.jpeg"
+    },
+    {
+      id: 12,
+      titulo: "Maquillaje Social",
+      antes: "assets/Despuesmaquillajeocial.jpeg",
+      despues: "assets/Antesmaquillajeocial.jpeg"
+    },
+    
   ]
+
+  peinadosAlbum = [
+    {
+      id: 1,
+      titulo: "Peinado Ondas de Agua",
+      imagen: "assets/peinado1.jpeg"
+    },
+    {
+      id: 2,
+      titulo: "Peinado Ondas de Agua",
+      imagen: "assets/peinado2.jpeg"
+    },
+    {
+      id: 3,
+      titulo: "Peinado Ondas de Agua para Novia",
+      imagen: "assets/peinado3.jpeg"
+    },
+    {
+      id: 4,
+      titulo: "Peinado Rizos para niña",
+      imagen: "assets/peinado4.jpeg"
+    },
+    {
+      id: 5,
+      titulo: "Peinado Rizos para niña",
+      imagen: "assets/peinado5.jpeg"
+    },
+    {
+      id: 6,
+      titulo: "Peinado Rizos para niña",
+      imagen: "assets/peinado6.jpeg"
+    },
+    {
+      id: 7,
+      titulo: "Peinado Ondas de Agua para Novia",
+      imagen: "assets/peinado7.jpeg"
+    },
+    {
+      id: 8,
+      titulo: "Peinado Ondas de Agua",
+      imagen: "assets/peinado8.jpeg"
+    }
+  ];
+  
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 

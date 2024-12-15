@@ -41,6 +41,23 @@
   </div>
 </section>
 
+  <section id="peinados" class="peinados" data-aos="fade-up">
+    <h1 class="section-title" data-aos="fade-up">💇‍♀️ Peinados</h1>
+    <p class="section-subtitle" data-aos="fade-up">
+      Explora mis peinados exclusivos diseñados para cada ocasión. La belleza está en los detalles.
+    </p>
+    <div class="peinados-gallery" data-aos="fade-up">
+      <!-- Card -->
+      <div class="card" *ngFor="let peinado of peinadosAlbum">
+        <div class="image-container">
+          <img [src]="peinado.imagen" alt="{{peinado.titulo}}" class="peinado-img">
+        </div>
+        <p class="card-title">{{peinado.titulo}}</p>
+      </div>
+    </div>
+  </section>
+
+
 <section id="multimedia" class="multimedia" data-aos="fade-up">
   <h1 class="section-title" data-aos="fade-up">🎥 Mi Trabajo en Video</h1>
   <p class="section-subtitle" data-aos="fade-up">Explora mis mejores trabajos en maquillaje a través de videos. ¡Mira la magia en acción!</p>
@@ -69,6 +86,21 @@
       </div>
       <div class="swiper-slide">
         <video src="assets/video8.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video9.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video10.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video11.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video12.mp4" controls class="video-item"></video>
+      </div>
+      <div class="swiper-slide">
+        <video src="assets/video13.mp4" controls class="video-item"></video>
       </div>
     </div>
     <!-- Controles de navegación -->
