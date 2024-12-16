@@ -48,7 +48,7 @@
     </p>
     <div class="peinados-gallery" data-aos="fade-up">
       <!-- Card -->
-      <div class="card" *ngFor="let peinado of peinadosAlbum">
+      <div class="card-peinados" *ngFor="let peinado of peinadosAlbum">
         <div class="image-container">
           <img [src]="peinado.imagen" alt="{{peinado.titulo}}" class="peinado-img">
         </div>
@@ -63,44 +63,9 @@
   <p class="section-subtitle" data-aos="fade-up">Explora mis mejores trabajos en maquillaje a través de videos. ¡Mira la magia en acción!</p>
   <div class="swiper video-swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <video src="assets/video1.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video2.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video3.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video4.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video5.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video6.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video7.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video8.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video9.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video10.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video11.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video12.mp4" controls class="video-item"></video>
-      </div>
-      <div class="swiper-slide">
-        <video src="assets/video13.mp4" controls class="video-item"></video>
+      <div class="swiper-slide" *ngFor="let video of videos">
+        <video [src]="video" controls muted playsinline class="video-item"></video>
+        <!-- <video src="assets/video1.mp4" controls class="video-item"></video> -->
       </div>
     </div>
     <!-- Controles de navegación -->

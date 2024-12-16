@@ -90,8 +90,7 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
       titulo: "Maquillaje Social",
       antes: "assets/Despuesmaquillajeocial.jpeg",
       despues: "assets/Antesmaquillajeocial.jpeg"
-    },
-    
+    }
   ]
 
   peinadosAlbum = [
@@ -127,16 +126,26 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     },
     {
       id: 7,
-      titulo: "Peinado Ondas de Agua para Novia",
-      imagen: "assets/peinado7.jpeg"
-    },
-    {
-      id: 8,
       titulo: "Peinado Ondas de Agua",
-      imagen: "assets/peinado8.jpeg"
+      imagen: "assets/peinado7.jpeg"
     }
   ];
-  
+
+  videos: string[] = [
+    'assets/video1.mp4',
+    'assets/video2.mp4',
+    'assets/video3.mp4',
+    'assets/video4.mp4',
+    'assets/video5.mp4',
+    'assets/video6.mp4',
+    'assets/video7.mp4',
+    'assets/video8.mp4',
+    'assets/video9.mp4',
+    'assets/video10.mp4',
+    'assets/video11.mp4',
+    'assets/video12.mp4',
+    'assets/video13.mp4'
+  ];
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 
@@ -148,7 +157,6 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     if (servicioId) {
       this.servicioSeleccionado = this.album.find(item => item.id === +servicioId);
       this.isModalOpen = true;
-      console.log(this.isModalOpen)
     }
   }
 
@@ -171,6 +179,17 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
         1024: { slidesPerView: 3 },
       },
     });
+
+    // Asegura que los videos estén silenciados y no permitan desmuteo
+  const videos = document.querySelectorAll<HTMLVideoElement>('.video-item');
+  videos.forEach(video => {
+    video.muted = true;
+    video.setAttribute('muted', 'true');
+    video.setAttribute('playsinline', 'true'); // Asegura que no tenga reproducción automática con audio
+    video.addEventListener('volumechange', () => {
+      if (!video.muted) video.muted = true; // Forzar que siempre estén muteados
+    });
+  });
   }
 
   closeModal() {

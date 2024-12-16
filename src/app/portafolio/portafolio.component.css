@@ -69,7 +69,7 @@ h1 {
 /* Contenedor individual de cada imagen */
 .image-container {
     width: 100%;
-    height: 350px; /* Altura fija para las imágenes */
+    min-height: 350px; /* Altura fija para las imágenes */
     overflow: hidden; /* Evita que las imágenes sobresalgan */
     position: relative;
 }
@@ -227,41 +227,7 @@ h1 {
 
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-    /* Ajustar la galería */
-    .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta el tamaño mínimo de las tarjetas */
-        gap: 10px; /* Espacio entre las tarjetas */
-    }
-
-    /* Asegurar que las cards ocupen todo el ancho en móviles */
-    .card {
-        max-width: 100%;
-        margin: auto;
-    }
-
-    /* Contenedor de las imágenes en columna */
-    .image-container {
-        flex-direction: column;
-        height: auto; /* Altura automática para evitar cortes en las imágenes */
-    }
-
-    .before-container,
-    .after-container {
-        width: 100%; /* Ocupa todo el ancho */
-        padding: 0; /* Elimina espacios laterales */
-    }
-
-    .before-img,
-    .after-img {
-        height: auto; /* Ajusta la altura automáticamente */
-    }
-
-    /* Modificar el tamaño de las etiquetas para que sean más visibles en móviles */
-    .before-container .text,
-    .after-container .text {
-        font-size: 1rem; /* Tamaño más pequeño */
-    }
-
+    
     /* Ajustar los videos */
     .video-container {
         flex-direction: column; /* Cambia a disposición vertical */
@@ -440,7 +406,7 @@ h1 {
 }
 
 /* Tarjeta */
-.card {
+.card-peinados {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -453,6 +419,7 @@ h1 {
     background-color: white;
     max-width: 300px; /* Limitar el ancho máximo de las tarjetas */
     width: 100%; /* Asegura que la tarjeta se adapte al contenedor */
+    margin: 0 auto;
 }
 
 .card:hover {
@@ -503,8 +470,8 @@ h1 {
         gap: 10px; /* Reducir el espacio entre tarjetas en móviles */
     }
 
-    .card {
-        max-width: 100%; /* Ajustar el ancho de las tarjetas */
+    .card-peinados {
+        max-width: 80%; /* Ajustar el ancho de las tarjetas */
     }
 
     .peinados-gallery .image-container {
