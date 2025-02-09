@@ -41,8 +41,24 @@
   </div>
 </section>
 
+<section id="certificados" class="certificados" data-aos="fade-up">
+  <h1 class="section-title" data-aos="fade-up">💼 Mi Trabajo Reciente!</h1>
+  <p class="section-subtitle" data-aos="fade-up">Explora mis nuevos trabajos.</p>
+  <div class="swiper certificados-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let certificado of certificados">
+        <img [src]="certificado.imagen" [alt]="certificado.titulo" class="certificado-item" />
+      </div>
+    </div>
+    <!-- Controles de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
   <section id="peinados" class="peinados" data-aos="fade-up">
-    <h1 class="section-title" data-aos="fade-up">💇‍♀️ Peinados</h1>
+    <h1 class="section-title" data-aos="fade-up">💇‍♀️ Peinados Con Tipos de Ondas</h1>
     <p class="section-subtitle" data-aos="fade-up">
       Explora mis peinados exclusivos diseñados para cada ocasión. La belleza está en los detalles.
     </p>

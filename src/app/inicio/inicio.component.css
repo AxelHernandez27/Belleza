@@ -53,18 +53,15 @@ html, body {
   margin-bottom: 10px;
 }
 
-.welcome-image {
-  flex: 0 1 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  max-width: 100%;
-  min-width: 150px;
+.welcome-image img {
+  max-width: 50%; /* Reduce el ancho */
+  max-height: 600px; /* Reduce la altura máxima */
+  height: auto;
+  aspect-ratio: 3 / 4; /* Mantiene una proporción vertical */
+  object-fit: cover; /* Recorta la imagen para ajustarse a la nueva proporción */
+  border-radius: 10px;
 }
+
 
 .welcome-image img {
   max-width: 70%;
@@ -136,6 +133,7 @@ html, body {
   margin-left: 5px;
   border-radius: 15px
 }
+
 
 /* Sección certificaciones */
 /* Sección Certificados */
@@ -317,6 +315,7 @@ html, body {
   }
 }
 
+
 /* Estilos responsivos */
 @media (max-width: 1024px) {
   .welcome-card {
@@ -332,20 +331,33 @@ html, body {
   }
 
   .welcome-image {
-    flex: 1 1 100%; /* La imagen ocupa todo el ancho */
-    justify-content: center;
+    flex: 1 1 90%; /* La imagen ocupa el 80% del ancho */
+    display: flex;
+    justify-content: center; /* Centra la imagen */
+    align-items: center;
+    margin: 20px 0; /* Espacio entre la imagen y el texto */
   }
 
   .welcome-image img {
-    max-width: 90%; /* Se ajusta el tamaño de la imagen */
+    max-width: 80%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Centra la imagen */
   }
 
   .welcome-card h2 {
-    font-size: 2em; /* Reducción del tamaño del título */
+    font-size: 1.8em; /* Ajusta el tamaño del título */
     margin: 0; /* Eliminar márgenes innecesarios */
     padding: 0; /* Eliminar padding adicional */
+    line-height: 1.2; /* Espaciado entre líneas para mejorar la legibilidad */
+  }
+
+  .welcome-card p {
+    font-size: 1.1em; /* Ajuste del tamaño del párrafo */
+    line-height: 1.6; /* Mejora la legibilidad y hace que el texto quede más equilibrado */
+    margin-top: 10px; /* Añade un pequeño espacio entre el título y el párrafo */
   }
 }
+
 
 
 /* Estilos responsivos para la sección "Acerca de mí" */

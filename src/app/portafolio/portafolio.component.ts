@@ -17,6 +17,7 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
 
   servicioSeleccionado: any;
   isModalOpen = false;
+  certificadoSeleccionado: any;
 
   album = [
     {
@@ -93,41 +94,170 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     }
   ]
 
+  certificados = [
+    {
+      id: 1,
+      titulo: "Certificado de Maquillaje Profesional",
+      imagen: "assets/Nuevos1.jpeg"
+    },
+    {
+      id: 2,
+      titulo: "Certificado en Maquillaje Social",
+      imagen: "assets/Nuevos2.jpeg"
+    },
+    {
+      id: 3,
+      titulo: "Certificado de Maquillaje Nupcial",
+      imagen: "assets/Nuevos3.jpeg"
+    },
+    {
+      id: 4,
+      titulo: "Certificado de Maquillaje de Moda",
+      imagen: "assets/Nuevos4.jpeg"
+    },
+    {
+      id: 5,
+      titulo: "Certificado de Maquillaje Profesional",
+      imagen: "assets/Nuevos5.jpeg"
+    },
+    {
+      id: 6,
+      titulo: "Certificado en Maquillaje Social",
+      imagen: "assets/Nuevos6.jpeg"
+    },
+    {
+      id: 7,
+      titulo: "Certificado de Maquillaje Nupcial",
+      imagen: "assets/Nuevos7.jpeg"
+    },
+    {
+      id: 8,
+      titulo: "Certificado de Maquillaje de Moda",
+      imagen: "assets/Nuevos8.jpeg"
+    },
+    {
+      id: 9,
+      titulo: "Certificado de Maquillaje Profesional",
+      imagen: "assets/Nuevos9.jpeg"
+    },
+    {
+      id: 10,
+      titulo: "Certificado en Maquillaje Social",
+      imagen: "assets/Nuevos10.jpeg"
+    },
+    {
+      id: 11,
+      titulo: "Certificado de Maquillaje Nupcial",
+      imagen: "assets/Nuevos11.jpeg"
+    },
+    {
+      id: 12,
+      titulo: "Certificado de Maquillaje de Moda",
+      imagen: "assets/Nuevos12.jpeg"
+    }, {
+      id: 13,
+      titulo: "Certificado de Maquillaje de Moda",
+      imagen: "assets/Nuevos13.jpeg"
+    },
+    {
+      id: 14,
+      titulo: "Certificado de Maquillaje Profesional",
+      imagen: "assets/Nuevos14.jpeg"
+    },
+    {
+      id: 15,
+      titulo: "Certificado en Maquillaje Social",
+      imagen: "assets/Nuevos15.jpeg"
+    },
+    {
+      id: 16,
+      titulo: "Certificado de Maquillaje Nupcial",
+      imagen: "assets/Nuevos16.jpeg"
+    },
+    {
+      id: 17,
+      titulo: "Certificado de Maquillaje de Moda",
+      imagen: "assets/Nuevos17.jpeg"
+    },
+    {
+      id: 18,
+      titulo: "Certificado de Maquillaje Nupcial",
+      imagen: "assets/Nuevos18.jpeg"
+    },
+    {
+      id: 19,
+      titulo: "Certificado de Maquillaje de Moda",
+      imagen: "assets/Nuevos19.jpeg"
+    },
+  ];
+
+  
+
   peinadosAlbum = [
     {
       id: 1,
-      titulo: "Peinado Ondas de Agua",
+      titulo: "",
       imagen: "assets/peinado1.jpeg"
     },
     {
       id: 2,
-      titulo: "Peinado Ondas de Agua",
+      titulo: "",
       imagen: "assets/peinado2.jpeg"
     },
     {
       id: 3,
-      titulo: "Peinado Ondas de Agua para Novia",
+      titulo: "",
       imagen: "assets/peinado3.jpeg"
     },
     {
       id: 4,
-      titulo: "Peinado Rizos para niña",
+      titulo: "",
       imagen: "assets/peinado4.jpeg"
     },
     {
       id: 5,
-      titulo: "Peinado Rizos para niña",
+      titulo: "",
       imagen: "assets/peinado5.jpeg"
     },
     {
       id: 6,
-      titulo: "Peinado Rizos para niña",
+      titulo: "",
       imagen: "assets/peinado6.jpeg"
     },
     {
       id: 7,
-      titulo: "Peinado Ondas de Agua",
+      titulo: "",
       imagen: "assets/peinado7.jpeg"
+    },
+    {
+      id: 8,
+      titulo: "",
+      imagen: "assets/peinado9.jpeg"
+    },
+    {
+      id: 9,
+      titulo: "",
+      imagen: "assets/peinado10.jpeg"
+    },
+    {
+      id: 10,
+      titulo: "",
+      imagen: "assets/peinado11.jpeg"
+    },
+    {
+      id: 11,
+      titulo: "",
+      imagen: "assets/peinado12.jpeg"
+    },
+    {
+      id: 12,
+      titulo: "",
+      imagen: "assets/peinado13.jpeg"
+    },
+    {
+      id: 13,
+      titulo: "",
+      imagen: "assets/peinado14.jpeg"
     }
   ];
 
@@ -144,7 +274,15 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     'assets/video10.mp4',
     'assets/video11.mp4',
     'assets/video12.mp4',
-    'assets/video13.mp4'
+    'assets/video13.mp4',
+    'assets/video14.mp4',
+    'assets/video15.mp4',
+    'assets/video16.mp4',
+    'assets/video17.mp4',
+    'assets/video18.mp4',
+    'assets/video19.mp4',
+    'assets/video20.mp4',
+    'assets/video21.mp4'
   ];
 
   constructor(private route: ActivatedRoute, private router: Router) {}
@@ -159,6 +297,7 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
       this.isModalOpen = true;
     }
   }
+  
 
   ngAfterViewInit() {
     new Swiper('.video-swiper', {
@@ -180,6 +319,28 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
       },
     });
 
+       // Inicializar el carrusel de certificados
+        new Swiper('.certificados-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true, // Habilita el bucle infinito
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          },
+        });
+    
+  
+
     // Asegura que los videos estén silenciados y no permitan desmuteo
   const videos = document.querySelectorAll<HTMLVideoElement>('.video-item');
   videos.forEach(video => {
@@ -196,4 +357,6 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     this.isModalOpen = false;
     this.router.navigate(['/portafolio']); // Redirige a la URL base de portafolio sin el id
   }
+
+
 }
