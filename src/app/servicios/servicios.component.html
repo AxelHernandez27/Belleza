@@ -32,15 +32,20 @@
       <!-- Maquillaje Social de Día -->
       <div class="makeup-item" data-aos="fade-right" *ngFor="let servicio of servicios">
         <img [src]="servicio.foto" alt="{{servicio.servicio}}">
-        <div class="makeup-info">
-          <h4>{{servicio.servicio}}</h4>
-          <p>
-            {{servicio.descripcion}}
-          </p>
-          <p>
-            <strong>¿Quiere agendar una cita?</strong>
-             Escríbenos vía WhatsApp: 
-             <a href="https://wa.me/524775863115" target="_blank"><br><br>477 586 3115</a>
+          <div class="makeup-info">
+            <h4>{{servicio.servicio}}</h4>
+            <p>
+              {{servicio.descripcion}}
+            </p>
+            <!--<p>
+              <strong>¿Quiere agendar una cita?</strong>
+              Escríbenos vía WhatsApp: 
+              <a href="https://wa.me/524775863115" target="_blank"><br><br>477 586 3115</a>
+            </p>-->
+            <p>
+              <strong>¿Quiere agendar una cita?</strong>
+              Escríbenos por Instagram: 
+              <a href="https://www.instagram.com/edithmanriquemakeup?utm_source=qr&igsh=MTJoaHFuODFrcWt4eA==" target="_blank" rel="noopener"><br><br>&#64;edithmanriquemakeup</a>
             </p>
             <button (click)="irAlPortafolio(servicio.id)">Ver Antes y Después</button>
         </div>
