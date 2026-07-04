@@ -20,6 +20,16 @@
   </div>
 </header>
 
+<div class="loading-language" *ngIf="cargandoIdioma">
+  <div class="loading-box">
+    <div class="spinner"></div>
+
+    <p>
+      {{ 'UI.CHANGING_LANGUAGE' | translate }}
+    </p>
+  </div>
+</div>
+
 <!-- 🔥 ESTO VA FUERA DEL HEADER -->
 <main>
   <router-outlet></router-outlet>
