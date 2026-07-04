@@ -69,7 +69,7 @@ cambiarIdioma(idioma: string) {
     this.translate.use(idioma);
     localStorage.setItem('idioma', idioma);
     this.cargandoIdioma = false;
-  }, 400);
+  }, 700);
 }
 
 }
