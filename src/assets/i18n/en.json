@@ -1,7 +1,7 @@
 {
   "NAVBAR": {
   "HOME": "Home",
-  "SERVICES": "Services",
+  "SERVICES": "Makeup",
   "PORTFOLIO": "Portfolio",
   "CONTACT": "Contact"
 },
@@ -12,7 +12,7 @@
   "HOME": {
     "HERO": {
       "TITLE": "MAKEUP ARTIST",
-      "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+      "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> BEAUTY STUDIO"
     },
 
     "ABOUT": {

@@ -1,7 +1,7 @@
 {
   "NAVBAR": {
   "HOME": "Inicio",
-  "SERVICES": "Servicios",
+  "SERVICES": "Maquillaje",
   "PORTFOLIO": "Portafolio",
   "CONTACT": "Contacto"
 },
@@ -11,7 +11,7 @@
   "HOME": {
     "HERO": {
       "TITLE": "MAKEUP ARTIST",
-      "SUBTITLE": "BIENVENIDA A <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+      "SUBTITLE": "BIENVENIDA A <br><br> EDITH MANRIQUE <br><br> ESTUDIO DE BELLEZA"
     },
 
     "ABOUT": {
@@ -132,7 +132,7 @@
   "SERVICES": {
     "HERO": {
       "TITLE": "SERVICIOS DE BELLEZA",
-      "SUBTITLE": "BIENVENIDA A <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+      "SUBTITLE": "BIENVENIDA A <br><br> EDITH MANRIQUE <br><br> ESTUDIO DE BELLEZA"
     },
 
     "ABOUT": {
