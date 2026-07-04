@@ -6,9 +6,7 @@
   "CONTACT": "Contacto"
 },
 "UI": {
-  "SCROLL_MESSAGE": "➡ Desliza la barra para ver más opciones ➡",
-    "CHANGING_LANGUAGE": "Cambiando idioma..."
-
+  "SCROLL_MESSAGE": "➡ Desliza la barra para ver más opciones ➡"
 },
   "HOME": {
     "HERO": {

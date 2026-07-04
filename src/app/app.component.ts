@@ -22,6 +22,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   title = 'Belleza';
   mostrarMensajeDesliza = false;
   cargandoIdioma = false;
+  idiomaSeleccionado = 'en';
 
   constructor(private translate: TranslateService) {
 
@@ -61,12 +62,14 @@ cambiarIdioma(idioma: string) {
 
   if (this.translate.currentLang === idioma) return;
 
+  this.idiomaSeleccionado = idioma;
   this.cargandoIdioma = true;
 
   setTimeout(() => {
     this.translate.use(idioma);
     localStorage.setItem('idioma', idioma);
     this.cargandoIdioma = false;
-  }, 400); // puedes cambiar el tiempo
+  }, 400);
 }
+
 }
