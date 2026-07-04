@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contacto',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+    TranslateModule
+  ],
   templateUrl: './contacto.component.html',
-  styleUrl: './contacto.component.css'
+  styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent {
 

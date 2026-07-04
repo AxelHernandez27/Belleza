@@ -2,21 +2,25 @@
   <div class="navbar-logo">
     <img src="assets/Diseño_edith__2.png" alt="Edith Manrique MakeUp Artist Logo">
   </div>
+
   <nav class="navbar-links">
-    <a routerLink="/inicio" href="/inicio">Inicio</a>
-    <a routerLink="/servicios" href="/servicios">Servicios</a>
-    <a routerLink="/portafolio" href="/portafolio">Portafolio</a>
-    <a routerLink="/contacto" href="/contacto">Contacto</a>
+    <a routerLink="/inicio">{{ 'NAVBAR.HOME' | translate }}</a>
+    <a routerLink="/servicios">{{ 'NAVBAR.SERVICES' | translate }}</a>
+    <a routerLink="/portafolio">{{ 'NAVBAR.PORTFOLIO' | translate }}</a>
+    <a routerLink="/contacto">{{ 'NAVBAR.CONTACT' | translate }}</a>
   </nav>
-  
-  <!-- Mensaje de deslizar -->
-<div *ngIf="mostrarMensajeDesliza" class="mensaje-desliza">
-  <span>➡ Desliza la barra para ver más opciones ➡</span>
-</div>
+
+  <div class="lang-switch">
+    <button (click)="cambiarIdioma('es')">🇲🇽 ES</button>
+    <button (click)="cambiarIdioma('en')">🇺🇸 EN</button>
+  </div>
+
+  <div *ngIf="mostrarMensajeDesliza" class="mensaje-desliza">
+    <span>{{ 'UI.SCROLL_MESSAGE' | translate }}</span>
+  </div>
 </header>
 
-
-
+<!-- 🔥 ESTO VA FUERA DEL HEADER -->
 <main>
   <router-outlet></router-outlet>
 </main>

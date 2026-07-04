@@ -1,0 +1,201 @@
+{
+  "NAVBAR": {
+  "HOME": "Inicio",
+  "SERVICES": "Servicios",
+  "PORTFOLIO": "Portafolio",
+  "CONTACT": "Contacto"
+},
+"UI": {
+  "SCROLL_MESSAGE": "➡ Desliza la barra para ver más opciones ➡"
+},
+  "HOME": {
+    "HERO": {
+      "TITLE": "MAKEUP ARTIST",
+      "SUBTITLE": "BIENVENIDA A <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+    },
+
+    "ABOUT": {
+      "TITLE": "Acerca de mí",
+      "DESCRIPTION": "Hola, soy Edith Manrique, artista de maquillaje certificada a nivel nacional e internacional, apasionada por resaltar la belleza única de cada mujer. Cuento con experiencia en maquillaje para pasarelas de Miss Guanajuato y editoriales. Me especializo en técnicas modernas de maquillaje para cualquier ocasión, ofreciendo siempre una asesoría y un servicio completamente personalizados, diseñados para ayudarte a tomar la mejor decisión y hacerte sentir más bella y segura de ti misma."
+    },
+
+    "CERTIFICATES": {
+      "TITLE": "🎓 Conoce mis certificaciones y reconocimientos a nivel nacional e internacional",
+      "SUBTITLE": "Explora mis certificados obtenidos en diversas áreas. ¡Conoce mis logros!"
+    },
+
+    "MISSION": {
+      "TITLE": "Misión",
+      "DESCRIPTION": "Proveer servicios de maquillaje profesional que realcen la belleza y confianza de nuestras clientas, utilizando productos de alta calidad y técnicas modernas."
+    },
+
+    "VISION": {
+      "TITLE": "Visión",
+      "DESCRIPTION": "Ser reconocidos como el estudio de maquillaje líder en la industria, ofreciendo experiencias únicas para hacerte lucir radiante."
+    },
+
+    "VALUES": {
+      "TITLE": "Valores",
+
+      "COMMITMENT": {
+        "NAME": "Compromiso:",
+        "DESCRIPTION": "Dedicar lo mejor de nosotros para satisfacer las expectativas de nuestros clientes."
+      },
+
+      "CREATIVITY": {
+        "NAME": "Creatividad:",
+        "DESCRIPTION": "Innovar constantemente para ofrecer estilos únicos y modernos."
+      },
+
+      "TRUST": {
+        "NAME": "Confianza:",
+        "DESCRIPTION": "Generar relaciones basadas en la honestidad y el profesionalismo."
+      }
+    }
+  },
+
+  "PORTAFOLIO": {
+    "MODAL": {
+      "BEFORE": "Antes",
+      "AFTER": "Después"
+    },
+
+    "GALLERY": {
+      "TITLE": "✨ Mi Trabajo",
+      "SUBTITLE": "Descubre el arte detrás de cada transformación. Comparte la belleza del antes y después."
+    },
+
+    "RECENT_WORK": {
+      "TITLE": "💼 Mi Trabajo Reciente!",
+      "SUBTITLE": "Explora mis nuevos trabajos."
+    },
+
+    "HAIRSTYLES": {
+      "TITLE": "💇‍♀️ Peinados con tipos de ondas",
+      "SUBTITLE": "Explora mis peinados exclusivos diseñados para cada ocasión. La belleza está en los detalles."
+    },
+
+    "VIDEOS": {
+      "TITLE": "🎥 Mi Trabajo en Video",
+      "SUBTITLE": "Explora mis mejores trabajos en maquillaje a través de videos. ¡Mira la magia en acción!"
+    },
+
+    "CERTIFICATES": {
+      "CERT_1": "Certificado de Maquillaje Profesional",
+      "CERT_2": "Certificado en Maquillaje Social",
+      "CERT_3": "Certificado de Maquillaje Nupcial",
+      "CERT_4": "Certificado de Maquillaje de Moda",
+      "CERT_5": "Certificado de Maquillaje Profesional",
+      "CERT_6": "Certificado en Maquillaje Social",
+      "CERT_7": "Certificado de Maquillaje Nupcial",
+      "CERT_8": "Certificado de Maquillaje de Moda",
+      "CERT_9": "Certificado de Maquillaje Profesional",
+      "CERT_10": "Certificado en Maquillaje Social",
+      "CERT_11": "Certificado de Maquillaje Nupcial",
+      "CERT_12": "Certificado de Maquillaje de Moda",
+      "CERT_13": "Certificado de Maquillaje de Moda",
+      "CERT_14": "Certificado de Maquillaje Profesional",
+      "CERT_15": "Certificado en Maquillaje Social",
+      "CERT_16": "Certificado de Maquillaje Nupcial",
+      "CERT_17": "Certificado de Maquillaje de Moda",
+      "CERT_18": "Certificado de Maquillaje Nupcial",
+      "CERT_19": "Certificado de Maquillaje de Moda"
+    },
+
+    "ALBUM": {
+      "SOCIAL_DAY": "Maquillaje Social de Día",
+      "SOCIAL_NIGHT": "Maquillaje Social de Noche",
+      "SMOKEY_EYES": "Smokey Eyes",
+      "MATURE_SKIN": "Maquillaje para Piel Madura con Hilos Tensores",
+      "XV_YEARS": "Maquillaje de XV Años",
+      "BRIDAL_DAY": "Maquillaje Nupcial de Día",
+      "BRIDAL_NIGHT": "Maquillaje Nupcial de Noche",
+      "FULL_COLOR": "Maquillaje Full Color",
+      "SOCIAL": "Maquillaje Social",
+      "BRIDAL": "Maquillaje Nupcial",
+      "MATURE_SOCIAL": "Maquillaje Social en Piel Madura",
+      "SOCIAL_2": "Maquillaje Social"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "¡Conéctate conmigo!",
+    "DESCRIPTION": "Puedes seguirme en mis redes sociales para ver mis últimos trabajos, noticias y más. ¿Quieres una cita? Escríbeme por Instagram y prográmala fácilmente.",
+
+    "SOCIAL": {
+      "INSTAGRAM": "Instagram",
+      "FACEBOOK": "Facebook",
+      "WHATSAPP": "WhatsApp",
+      "EMAIL": "Correo Electrónico"
+    }
+  },
+
+  "SERVICES": {
+    "HERO": {
+      "TITLE": "SERVICIOS DE BELLEZA",
+      "SUBTITLE": "BIENVENIDA A <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+    },
+
+    "ABOUT": {
+      "TITLE": "Acerca de nuestros servicios",
+      "DESCRIPTION": "En Edith Manrique Makeup Studio ofrecemos servicios especializados para resaltar tu belleza única. Desde maquillaje profesional y peinados para cualquier ocasión, hasta asesorías en colorimetría para descubrir los tonos que mejor realzan tu piel. ¡Deja que nuestra experiencia te ayude a lucir increíble!"
+    },
+
+    "MAKEUP": {
+      "TITLE": "Nuestros Maquillajes"
+    },
+
+    "BOOKING": {
+      "TITLE": "¿Quiere agendar una cita?",
+      "TEXT": "Escríbenos por Instagram:"
+    },
+
+    "BUTTON": "Ver Antes y Después",
+
+    "LIST": {
+      "SOCIAL_DAY": {
+        "NAME": "Maquillaje Social de Día",
+        "DESCRIPTION": "Maquillaje suave en tonos cálidos y rosados. Buscamos resaltar tu belleza natural, ideal para tu día a día."
+      },
+
+      "SOCIAL_NIGHT": {
+        "NAME": "Maquillaje Social de Noche",
+        "DESCRIPTION": "Maquillaje en tonos cálidos degradados, iluminación y un toque de brillo para agrandar visualmente la mirada, buscando generar intensidad y luminosidad respetando la colorimetría de tu piel."
+      },
+
+      "SMOKEY": {
+        "NAME": "Maquillaje Smokey Eyes",
+        "DESCRIPTION": "Maquillaje en tonos cafés y oscuros ahumados con un toque de glitter de color, buscando realzar la mirada haciéndola lucir profunda, atractiva y llamativa."
+      },
+
+      "MATURE": {
+        "NAME": "Maquillaje para Piel Madura con Hilos Tensores",
+        "DESCRIPTION": "Maquillaje en tonos degradados con iluminación para realzar la belleza natural sin acentuar las líneas de expresión. Opcionalmente se aplican hilos tensores para mejorar la apariencia de la piel."
+      },
+
+      "XV": {
+        "NAME": "Maquillaje de XV Años",
+        "DESCRIPTION": "Maquillaje personalizado en tonos neutros o glam con color, brillo y delineados para resaltar la belleza natural de la quinceañera."
+      },
+
+      "BRIDAL_DAY": {
+        "NAME": "Maquillaje Nupcial de Día",
+        "DESCRIPTION": "Maquillaje elegante y luminoso en tonos neutros, beige, cafés y rosados, adaptado al estilo y tipo de ceremonia de la novia."
+      },
+
+      "BRIDAL_NIGHT": {
+        "NAME": "Maquillaje Nupcial de Noche",
+        "DESCRIPTION": "Maquillaje elegante y sofisticado con sombras satinadas o brillantes para resaltar los rasgos de la novia durante ceremonias nocturnas."
+      },
+
+      "FULL_COLOR": {
+        "NAME": "Maquillaje Full Color",
+        "DESCRIPTION": "Maquillaje vibrante y colorido para eventos especiales, fotografías o uso diario, resaltando principalmente labios y mirada."
+      },
+
+      "EDITORIAL": {
+        "NAME": "Maquillaje Editorial",
+        "DESCRIPTION": "Maquillaje creativo para revistas, publicidad, pasarelas y redes sociales, adaptado completamente a la idea del cliente o la agencia."
+      }
+    }
+  }
+}

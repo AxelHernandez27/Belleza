@@ -1,0 +1,202 @@
+{
+  "NAVBAR": {
+  "HOME": "Home",
+  "SERVICES": "Services",
+  "PORTFOLIO": "Portfolio",
+  "CONTACT": "Contact"
+},
+"UI": {
+  "SCROLL_MESSAGE": "➡ Scroll to see more options ➡"
+},
+  "HOME": {
+    "HERO": {
+      "TITLE": "MAKEUP ARTIST",
+      "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+    },
+
+    "ABOUT": {
+      "TITLE": "About Me",
+      "DESCRIPTION": "Hello, I'm Edith Manrique, a nationally and internationally certified makeup artist passionate about enhancing every woman's unique beauty. I have experience working on makeup for Miss Guanajuato fashion shows and editorial productions. I specialize in modern makeup techniques for every occasion, always providing personalized advice and tailored services designed to help you make the best choice while making you feel more beautiful and confident."
+    },
+
+    "CERTIFICATES": {
+      "TITLE": "🎓 Discover My National and International Certifications & Awards",
+      "SUBTITLE": "Explore the certifications I've earned in different areas of makeup artistry. Discover my achievements!"
+    },
+
+    "MISSION": {
+      "TITLE": "Mission",
+      "DESCRIPTION": "To provide professional makeup services that enhance our clients' beauty and confidence by using high-quality products and modern techniques."
+    },
+
+    "VISION": {
+      "TITLE": "Vision",
+      "DESCRIPTION": "To be recognized as a leading makeup studio in the industry, creating unique experiences that make every client look and feel radiant."
+    },
+
+    "VALUES": {
+      "TITLE": "Values",
+
+      "COMMITMENT": {
+        "NAME": "Commitment:",
+        "DESCRIPTION": "Giving our very best to exceed our clients' expectations."
+      },
+
+      "CREATIVITY": {
+        "NAME": "Creativity:",
+        "DESCRIPTION": "Continuously innovating to offer unique and modern styles."
+      },
+
+      "TRUST": {
+        "NAME": "Trust:",
+        "DESCRIPTION": "Building relationships based on honesty and professionalism."
+      }
+    }
+  },
+
+  "PORTAFOLIO": {
+    "MODAL": {
+      "BEFORE": "Before",
+      "AFTER": "After"
+    },
+
+    "GALLERY": {
+      "TITLE": "✨ My Work",
+      "SUBTITLE": "Discover the artistry behind every transformation. Experience the beauty of before and after."
+    },
+
+    "RECENT_WORK": {
+      "TITLE": "💼 My Recent Work",
+      "SUBTITLE": "Explore my latest makeup creations."
+    },
+
+    "HAIRSTYLES": {
+      "TITLE": "💇‍♀️ Hairstyles with Different Curl Styles",
+      "SUBTITLE": "Discover my exclusive hairstyles designed for every occasion. Beauty is all in the details."
+    },
+
+    "VIDEOS": {
+      "TITLE": "🎥 My Work in Video",
+      "SUBTITLE": "Explore some of my best makeup transformations through video. Watch the magic happen!"
+    },
+
+    "CERTIFICATES": {
+      "CERT_1": "Professional Makeup Certificate",
+      "CERT_2": "Social Makeup Certificate",
+      "CERT_3": "Bridal Makeup Certificate",
+      "CERT_4": "Fashion Makeup Certificate",
+      "CERT_5": "Professional Makeup Certificate",
+      "CERT_6": "Social Makeup Certificate",
+      "CERT_7": "Bridal Makeup Certificate",
+      "CERT_8": "Fashion Makeup Certificate",
+      "CERT_9": "Professional Makeup Certificate",
+      "CERT_10": "Social Makeup Certificate",
+      "CERT_11": "Bridal Makeup Certificate",
+      "CERT_12": "Fashion Makeup Certificate",
+      "CERT_13": "Fashion Makeup Certificate",
+      "CERT_14": "Professional Makeup Certificate",
+      "CERT_15": "Social Makeup Certificate",
+      "CERT_16": "Bridal Makeup Certificate",
+      "CERT_17": "Fashion Makeup Certificate",
+      "CERT_18": "Bridal Makeup Certificate",
+      "CERT_19": "Fashion Makeup Certificate"
+    },
+
+    "ALBUM": {
+      "SOCIAL_DAY": "Daytime Social Makeup",
+      "SOCIAL_NIGHT": "Evening Social Makeup",
+      "SMOKEY_EYES": "Smokey Eyes",
+      "MATURE_SKIN": "Mature Skin Makeup with Thread Lift",
+      "XV_YEARS": "Quinceañera Makeup",
+      "BRIDAL_DAY": "Daytime Bridal Makeup",
+      "BRIDAL_NIGHT": "Evening Bridal Makeup",
+      "FULL_COLOR": "Full Color Makeup",
+      "SOCIAL": "Social Makeup",
+      "BRIDAL": "Bridal Makeup",
+      "MATURE_SOCIAL": "Social Makeup for Mature Skin",
+      "SOCIAL_2": "Social Makeup"
+    }
+  },
+
+  "CONTACT": {
+    "TITLE": "Let's Connect!",
+    "DESCRIPTION": "Follow me on social media to discover my latest work, updates, and more. Ready to book your appointment? Send me a message on Instagram and schedule your session with ease.",
+
+    "SOCIAL": {
+      "INSTAGRAM": "Instagram",
+      "FACEBOOK": "Facebook",
+      "WHATSAPP": "WhatsApp",
+      "EMAIL": "Email"
+    }
+  },
+  "SERVICES": {
+  
+  "HERO": {
+    "TITLE": "BEAUTY SERVICES",
+    "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+  },
+
+  "ABOUT": {
+    "TITLE": "About Our Services",
+    "DESCRIPTION": "At Edith Manrique Makeup Studio, we offer specialized beauty services designed to enhance your unique beauty. From professional makeup and hairstyles for every occasion to personalized color analysis consultations that help you discover the shades that best complement your skin tone. Let our experience help you look and feel your absolute best!"
+  },
+
+  "MAKEUP": {
+    "TITLE": "Our Makeup Services"
+  },
+
+  "BOOKING": {
+    "TITLE": "Would you like to book an appointment?",
+    "TEXT": "Message us on Instagram:"
+  },
+
+  "BUTTON": "View Before & After",
+
+  "LIST": {
+    "SOCIAL_DAY": {
+      "NAME": "Daytime Social Makeup",
+      "DESCRIPTION": "Soft makeup in warm pink tones designed to enhance your natural beauty, perfect for everyday wear."
+    },
+
+    "SOCIAL_NIGHT": {
+      "NAME": "Evening Social Makeup",
+      "DESCRIPTION": "Makeup with blended warm tones, luminous highlights, and a touch of shimmer to make your eyes appear larger while enhancing intensity and radiance, always respecting your skin's natural color harmony."
+    },
+
+    "SMOKEY": {
+      "NAME": "Smokey Eyes Makeup",
+      "DESCRIPTION": "Smokey makeup in rich brown and dark shades with a touch of colorful glitter, designed to create a deep, bold, and captivating look."
+    },
+
+    "MATURE": {
+      "NAME": "Mature Skin Makeup with Thread Lifting",
+      "DESCRIPTION": "Illuminating makeup with soft blended tones that enhances natural beauty without emphasizing expression lines. Thread lifting may also be applied to help reduce the appearance of wrinkles, improve skin texture, and provide additional support."
+    },
+
+    "XV": {
+      "NAME": "Quinceañera Makeup",
+      "DESCRIPTION": "Customized makeup in neutral or glamorous tones with color, shimmer, and eyeliner, designed to enhance the quinceañera's natural beauty while maintaining a fresh, youthful appearance."
+    },
+
+    "BRIDAL_DAY": {
+      "NAME": "Daytime Bridal Makeup",
+      "DESCRIPTION": "Elegant and radiant bridal makeup featuring neutral, beige, brown, and pink tones, tailored to the bride's personal style and the type of ceremony."
+    },
+
+    "BRIDAL_NIGHT": {
+      "NAME": "Evening Bridal Makeup",
+      "DESCRIPTION": "Elegant and sophisticated bridal makeup with neutral tones, satin finishes, and shimmering eyeshadows, designed to enhance the bride's features for evening ceremonies."
+    },
+
+    "FULL_COLOR": {
+      "NAME": "Full Color Makeup",
+      "DESCRIPTION": "Vibrant and colorful makeup for special events, photoshoots, or everyday wear, focusing on enhancing the lips and eyes to create a fresh, radiant look."
+    },
+
+    "EDITORIAL": {
+      "NAME": "Editorial Makeup",
+      "DESCRIPTION": "Creative makeup inspired by fashion and artistic concepts, featuring graphic eyeliner, bold colors, glitter, and unique designs. Perfect for magazines, advertising campaigns, runway shows, and social media content, always tailored to the client's or agency's vision."
+    }
+  }
+}
+}

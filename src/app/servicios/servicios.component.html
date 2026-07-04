@@ -2,24 +2,24 @@
   <!-- Hero Section -->
   <section id="services-welcome" class="welcome-container" data-aos="fade-up">
     <div class="welcome-card" data-aos="fade-up">
-      <h1>SERVICIOS DE BELLEZA</h1>
-      <br>
-      <h2>BIENVENIDA A<br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO</h2>
+        <h1 [innerHTML]="'SERVICES.HERO.TITLE' | translate"></h1>
+
+    <h2 [innerHTML]="'SERVICES.HERO.SUBTITLE' | translate"></h2>
     </div>
+
     <div class="welcome-image" data-aos="fade-up">
-      <img src="assets/peinado.jpeg" alt="Servicios de Belleza">
+      <img src="assets/peinado.jpeg" alt="Beauty Services">
     </div>
   </section>
 
   <!-- Acerca de Nuestros Servicios -->
   <section id="about-services" class="about-container" data-aos="fade-up">
     <div class="about-text">
-      <h3>Acerca de nuestros servicios</h3>
+      <h3>{{ 'SERVICES.ABOUT.TITLE' | translate }}</h3>
+
       <div class="about-card">
         <p>
-          En Edith Manrique Makeup Studio ofrecemos servicios especializados para resaltar tu belleza única. 
-          Desde maquillaje profesional y peinados para cualquier ocasión, hasta asesorías en colorimetría para descubrir los tonos que mejor realzan tu piel. 
-          ¡Deja que nuestra experiencia te ayude a lucir increíble!
+          {{ 'SERVICES.ABOUT.DESCRIPTION' | translate }}
         </p>
       </div>
     </div>
@@ -27,27 +27,36 @@
 
   <!-- Detalle de Maquillajes -->
   <section id="makeup-details" class="makeup-section" data-aos="fade-up">
-    <h3>Nuestros Maquillajes</h3>
+    <h3>{{ 'SERVICES.MAKEUP.TITLE' | translate }}</h3>
+
     <div class="makeup-list">
-      <!-- Maquillaje Social de Día -->
       <div class="makeup-item" data-aos="fade-right" *ngFor="let servicio of servicios">
-        <img [src]="servicio.foto" alt="{{servicio.servicio}}">
-          <div class="makeup-info">
-            <h4>{{servicio.servicio}}</h4>
-            <p>
-              {{servicio.descripcion}}
-            </p>
-            <!--<p>
-              <strong>¿Quiere agendar una cita?</strong>
-              Escríbenos vía WhatsApp: 
-              <a href="https://wa.me/524775863115" target="_blank"><br><br>477 586 3115</a>
-            </p>-->
-            <p>
-              <strong>¿Quiere agendar una cita?</strong>
-              Escríbenos por Instagram: 
-              <a href="https://www.instagram.com/edithmanriquemakeup?utm_source=qr&igsh=MTJoaHFuODFrcWt4eA==" target="_blank" rel="noopener"><br><br>&#64;edithmanriquemakeup</a>
-            </p>
-            <button (click)="irAlPortafolio(servicio.id)">Ver Antes y Después</button>
+
+        <img [src]="servicio.foto" [alt]="servicio.servicio | translate">
+
+        <div class="makeup-info">
+          <h4>{{ servicio.servicio | translate }}</h4>
+
+          <p>
+            {{ servicio.descripcion | translate }}
+          </p>
+
+          <p>
+            <strong>{{ 'SERVICES.BOOKING.TITLE' | translate }}</strong>
+            {{ 'SERVICES.BOOKING.TEXT' | translate }}
+
+            <a
+              href="https://www.instagram.com/edithmanriquemakeup?utm_source=qr&igsh=MTJoaHFuODFrcWt4eA=="
+              target="_blank"
+              rel="noopener">
+              <br><br>&#64;edithmanriquemakeup
+            </a>
+          </p>
+
+          <button (click)="irAlPortafolio(servicio.id)">
+            {{ 'SERVICES.BUTTON' | translate }}
+          </button>
+
         </div>
       </div>
     </div>

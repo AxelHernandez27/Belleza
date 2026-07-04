@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+
 import Aos from 'aos';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper';
@@ -9,12 +11,14 @@ Swiper.use([Navigation, Pagination]);
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    TranslateModule
+  ],
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit, AfterViewInit {
-
   certificadoSeleccionado: any;
   isModalOpen = false;
 
@@ -52,23 +56,26 @@ export class InicioComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     new Swiper('.certificados-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true, // Habilita el bucle infinito
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        640: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      },
-    });
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+    pagination: {
+      el: '.certificados-pagination',
+      clickable: true,
+    },
+    
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
   }
 
   ngAfterViewChecked() {

@@ -517,3 +517,85 @@ html, body {
 [data-aos] {
   overflow: hidden;
 }
+
+/* Sección certificaciones */
+/* Sección Certificados */
+
+  .certificado-title {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  z-index: 2;
+}
+  .certificados h1 {
+    color: #FFC0CB; /* Color rosa claro */
+    margin-bottom: 20px;
+  }
+  
+  /* Aseguramos que el swiper ocupe el ancho completo y ajuste bien las imágenes */
+.certificados {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  position: relative;
+}
+
+/* Swiper contenedor */
+.certificados-swiper {
+  width: 100%;
+  position: relative;
+}
+
+/* Slides */
+.certificados-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagen */
+.certificado-item {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* 🔥 FLECHAS visibles y encima */
+.certificados .swiper-button-next,
+.certificados .swiper-button-prev {
+  width: 45px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: white;
+    z-index: 9999 !important;
+}
+
+/* ÍCONO DE FLECHA */
+.certificados .swiper-button-next::after,
+.certificados .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* 🔥 posición mejor */
+.certificados .swiper-button-next {
+  right: 10px;
+}
+
+.certificados .swiper-button-prev {
+  left: 10px;
+}
+
+/* paginación */
+.certificados .swiper-pagination {
+  z-index: 20;
+  bottom: 10px;
+}

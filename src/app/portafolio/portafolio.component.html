@@ -2,92 +2,128 @@
 <div class="modal" *ngIf="isModalOpen">
   <div class="modal-content">
     <span class="close-btn" (click)="closeModal()">×</span>
-    
+
     <div class="modal-images">
       <div class="image-container">
-        <span class="image-label">Antes</span>
+        <span class="image-label">{{ 'PORTAFOLIO.MODAL.BEFORE' | translate }}</span>
         <img [src]="servicioSeleccionado?.antes" alt="Antes" class="modal-img">
       </div>
+
       <div class="image-container">
-        <span class="image-label">Después</span>
+        <span class="image-label">{{ 'PORTAFOLIO.MODAL.AFTER' | translate }}</span>
         <img [src]="servicioSeleccionado?.despues" alt="Después" class="modal-img">
       </div>
     </div>
-    <h2>{{servicioSeleccionado?.titulo}}</h2>
+
+    <h2>{{ servicioSeleccionado?.titulo }}</h2>
   </div>
 </div>
 
-
-
 <!-- Sección Galería -->
 <section id="galeria" class="galeria">
-  <h1 class="section-title"  data-aos="fade-up">✨ Mi Trabajo</h1>
-  <p class="section-subtitle"  data-aos="fade-up">Descubre el arte detrás de cada transformación. Comparte la belleza del antes y después.</p>
-  <div class="gallery"  data-aos="fade-up">
-    <!-- Card 1 -->
+  <h1 class="section-title" data-aos="fade-up">
+    {{ 'PORTAFOLIO.GALLERY.TITLE' | translate }}
+  </h1>
+
+  <p class="section-subtitle" data-aos="fade-up">
+    {{ 'PORTAFOLIO.GALLERY.SUBTITLE' | translate }}
+  </p>
+
+  <div class="gallery" data-aos="fade-up">
     <div class="card" *ngFor="let item of album">
       <div class="image-container">
         <div class="before-container">
-          <img [src]="item.antes" alt="{{item.titulo}} - Antes" class="before-img">
-          <p class="text">Antes</p>
+          <img [src]="item.antes" alt="{{ item.titulo }} - Antes" class="before-img">
+          <p class="text">{{ 'PORTAFOLIO.MODAL.BEFORE' | translate }}</p>
         </div>
+
         <div class="after-container">
-          <img [src]="item.despues" alt="{{item.titulo}} - Después" class="after-img">
-          <p class="text">Después</p>
+          <img [src]="item.despues" alt="{{ item.titulo }} - Después" class="after-img">
+          <p class="text">{{ 'PORTAFOLIO.MODAL.AFTER' | translate }}</p>
         </div>
       </div>
-      <p class="card-title">{{item.titulo}}</p>
-    </div>
-  </div>
+
+<p class="card-title">{{ item.titulo | translate }}</p>    </div>
+</div>
 </section>
 
+<!-- Certificados / Trabajo reciente -->
 <section id="certificados" class="certificados" data-aos="fade-up">
-  <h1 class="section-title" data-aos="fade-up">💼 Mi Trabajo Reciente!</h1>
-  <p class="section-subtitle" data-aos="fade-up">Explora mis nuevos trabajos.</p>
+  <h1 class="section-title" data-aos="fade-up">
+    {{ 'PORTAFOLIO.RECENT_WORK.TITLE' | translate }}
+  </h1>
+
+  <p class="section-subtitle" data-aos="fade-up">
+    {{ 'PORTAFOLIO.RECENT_WORK.SUBTITLE' | translate }}
+  </p>
+
   <div class="swiper certificados-swiper">
     <div class="swiper-wrapper">
+
       <div class="swiper-slide" *ngFor="let certificado of certificados">
-        <img [src]="certificado.imagen" [alt]="certificado.titulo" class="certificado-item" />
+
+        <img
+          [src]="certificado.imagen"
+          [alt]="certificado.titulo | translate"
+          class="certificado-item"
+        />
+
+        <p class="certificado-title">
+          {{ certificado.titulo | translate }}
+        </p>
+
       </div>
+
     </div>
-    <!-- Controles de navegación -->
+
+    <!-- 👇 IMPORTANTÍSIMO: clases únicas -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+    <div class="certificados-pagination"></div>
+
   </div>
 </section>
 
-  <section id="peinados" class="peinados" data-aos="fade-up">
-    <h1 class="section-title" data-aos="fade-up">💇‍♀️ Peinados Con Tipos de Ondas</h1>
-    <p class="section-subtitle" data-aos="fade-up">
-      Explora mis peinados exclusivos diseñados para cada ocasión. La belleza está en los detalles.
-    </p>
-    <div class="peinados-gallery" data-aos="fade-up">
-      <!-- Card -->
-      <div class="card-peinados" *ngFor="let peinado of peinadosAlbum">
-        <div class="image-container">
-          <img [src]="peinado.imagen" alt="{{peinado.titulo}}" class="peinado-img">
-        </div>
-        <p class="card-title">{{peinado.titulo}}</p>
+<!-- Peinados -->
+<section id="peinados" class="peinados" data-aos="fade-up">
+  <h1 class="section-title" data-aos="fade-up">
+    {{ 'PORTAFOLIO.HAIRSTYLES.TITLE' | translate }}
+  </h1>
+
+  <p class="section-subtitle" data-aos="fade-up">
+    {{ 'PORTAFOLIO.HAIRSTYLES.SUBTITLE' | translate }}
+  </p>
+
+  <div class="peinados-gallery" data-aos="fade-up">
+    <div class="card-peinados" *ngFor="let peinado of peinadosAlbum">
+      <div class="image-container">
+        <img [src]="peinado.imagen" alt="{{ peinado.titulo }}" class="peinado-img">
       </div>
+
+      <p class="card-title">{{ peinado.titulo }}</p>
     </div>
-  </section>
+  </div>
+</section>
 
-
+<!-- Videos -->
 <section id="multimedia" class="multimedia" data-aos="fade-up">
-  <h1 class="section-title" data-aos="fade-up">🎥 Mi Trabajo en Video</h1>
-  <p class="section-subtitle" data-aos="fade-up">Explora mis mejores trabajos en maquillaje a través de videos. ¡Mira la magia en acción!</p>
+  <h1 class="section-title" data-aos="fade-up">
+    {{ 'PORTAFOLIO.VIDEOS.TITLE' | translate }}
+  </h1>
+
+  <p class="section-subtitle" data-aos="fade-up">
+    {{ 'PORTAFOLIO.VIDEOS.SUBTITLE' | translate }}
+  </p>
+
   <div class="swiper video-swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide" *ngFor="let video of videos">
         <video [src]="video" controls muted playsinline class="video-item"></video>
-        <!-- <video src="assets/video1.mp4" controls class="video-item"></video> -->
       </div>
     </div>
-    <!-- Controles de navegación -->
+
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
 </section>
-

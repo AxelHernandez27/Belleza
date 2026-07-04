@@ -2,88 +2,129 @@
   <!-- Hero Section -->
   <section id="welcome" class="welcome-container" data-aos="fade-up">
     <div class="welcome-card" data-aos="fade-up">
-      <h1>MAKEUP ARTIST</h1>
+      <h1>{{ 'HOME.HERO.TITLE' | translate }}</h1>
       <br>
-      <h2>BIENVENIDA A<br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO</h2>
+      <h2 [innerHTML]="'HOME.HERO.SUBTITLE' | translate"></h2>
     </div>
+
     <div class="welcome-image" data-aos="fade-up">
       <img src="assets/nuevaPortada.jpeg" alt="MakeUp Artistry">
     </div>
   </section>
 
-  <!-- Acerca de mí Section -->
+  <!-- Acerca de mí -->
   <section id="about" class="about-container" data-aos="fade-up">
     <div class="about-image">
       <img src="assets/new1.jpeg" alt="Foto maquillaje 1">
       <img src="assets/new2.jpeg" alt="Foto maquillaje 2">
     </div>
+
     <div class="about-text">
-      <h3>Acerca de mí</h3>
+      <h3>{{ 'HOME.ABOUT.TITLE' | translate }}</h3>
+
       <div class="about-card">
-        <p>
-          Hola, soy Edith Manrique, artista de maquillaje certificada a nivel nacional e internacional, apasionada por
-          resaltar la belleza única de cada mujer.
-          Cuento con experiencia en maquillaje para pasarelas de Miss Guanajuato y editoriales. Me especializo en
-          técnicas modernas de maquillaje para cualquier ocasión, ofreciendo siempre una asesoría y un servicio
-          completamente personalizados, diseñados para ayudarte a tomar la mejor decisión y hacerte sentir más bella y
-          segura de ti misma!</p>
+        <p>{{ 'HOME.ABOUT.DESCRIPTION' | translate }}</p>
       </div>
     </div>
   </section>
 
+  <!-- Certificados -->
   <section id="certificados" class="certificados" data-aos="fade-up">
-    <h1 class="section-title" data-aos="fade-up">🎓 Conoce mis certificaciones y reconocimientos a nivel nacional e internacional!</h1>
-    <p class="section-subtitle" data-aos="fade-up">Explora mis certificados obtenidos en diversas áreas. ¡Conoce mis logros!</p>
+
+    <h1 class="section-title" data-aos="fade-up">
+      {{ 'HOME.CERTIFICATES.TITLE' | translate }}
+    </h1>
+
+    <p class="section-subtitle" data-aos="fade-up">
+      {{ 'HOME.CERTIFICATES.SUBTITLE' | translate }}
+    </p>
+
     <div class="swiper certificados-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" *ngFor="let certificado of certificados">
-          <img [src]="certificado.imagen" [alt]="certificado.titulo" class="certificado-item" />
+          <img
+            [src]="certificado.imagen"
+            [alt]="certificado.titulo"
+            class="certificado-item"
+          />
         </div>
       </div>
-      <!-- Controles de navegación -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+
+      <!-- 👇 IMPORTANTÍSIMO: clases únicas -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="certificados-pagination"></div>
+
     </div>
   </section>
-  
 
   <!-- Misión, Visión y Valores -->
   <section id="mission-vision-values" class="mission-section" data-aos="fade-up">
-    <!-- Card Misión -->
+
+    <!-- Misión -->
     <div class="mission-card" data-aos="fade-right">
-      <h3>Misión</h3>
+      <h3>{{ 'HOME.MISSION.TITLE' | translate }}</h3>
+
       <img src="assets/icono_mision.png" alt="Icono Misión">
-      <p>Proveer servicios de maquillaje profesional que realcen la belleza y confianza de nuestros clientas, utilizando
-        productos de alta calidad y técnicas modernas.</p>
+
+      <p>{{ 'HOME.MISSION.DESCRIPTION' | translate }}</p>
     </div>
 
-    <!-- Card Visión -->
+    <!-- Visión -->
     <div class="mission-card" data-aos="fade-left">
-      <h3>Visión</h3>
+
+      <h3>{{ 'HOME.VISION.TITLE' | translate }}</h3>
+
       <img src="assets/icono_vision.png" alt="Icono Visión">
-      <p>Ser reconocidos como el Estudio de maquillaje líder en la industria, ofreciendo experiencias únicas para
-        hacerte lucir radiante.</p>
+
+      <p>{{ 'HOME.VISION.DESCRIPTION' | translate }}</p>
+
     </div>
 
     <!-- Valores -->
     <div class="values-section" data-aos="fade-up">
-      <h3>Valores</h3>
+
+      <h3>{{ 'HOME.VALUES.TITLE' | translate }}</h3>
+
       <div class="values-list">
+
         <div class="value-item" data-aos="flip-up">
+
           <img src="assets/icono_compromiso.png" alt="Icono Compromiso">
-          <p><strong>Compromiso:</strong> Dedicar lo mejor de nosotros para satisfacer las expectativas de nuestros
-            clientes.</p>
+
+          <p>
+            <strong>{{ 'HOME.VALUES.COMMITMENT.NAME' | translate }}</strong>
+            {{ 'HOME.VALUES.COMMITMENT.DESCRIPTION' | translate }}
+          </p>
+
         </div>
+
         <div class="value-item" data-aos="flip-down">
+
           <img src="assets/icono_creatividad.png" alt="Icono Creatividad">
-          <p><strong>Creatividad:</strong> Innovar constantemente para ofrecer estilos únicos y modernos.</p>
+
+          <p>
+            <strong>{{ 'HOME.VALUES.CREATIVITY.NAME' | translate }}</strong>
+            {{ 'HOME.VALUES.CREATIVITY.DESCRIPTION' | translate }}
+          </p>
+
         </div>
+
         <div class="value-item" data-aos="flip-left">
+
           <img src="assets/icono_confianza.png" alt="Icono Confianza">
-          <p><strong>Confianza:</strong> Generar relaciones basadas en la honestidad y el profesionalismo.</p>
+
+          <p>
+            <strong>{{ 'HOME.VALUES.TRUST.NAME' | translate }}</strong>
+            {{ 'HOME.VALUES.TRUST.DESCRIPTION' | translate }}
+          </p>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
 </main>

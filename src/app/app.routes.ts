@@ -7,18 +7,14 @@ import { InicioComponent } from './inicio/inicio.component';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
 
 export const routes: Routes = [
-    { path: 'inicio', component: InicioComponent },
-    { path: 'servicios', component: ServiciosComponent },
-    { path: 'contacto', component: ContactoComponent },
-    { path: 'portafolio', component: PortafolioComponent },
-    { path: 'portafolio/:id', component: PortafolioComponent },
-    { path: 'privacidad', component: PrivacidadComponent },
-    { path: '', redirectTo: '/inicio', pathMatch: 'full' },
-    { path: '*', redirectTo: '/inicio', pathMatch: 'full' }
+  { path: 'inicio', component: InicioComponent },
+  { path: 'servicios', component: ServiciosComponent },
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'portafolio', component: PortafolioComponent },
+  { path: 'portafolio/:id', component: PortafolioComponent },
+  { path: 'privacidad', component: PrivacidadComponent },
+
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  { path: '**', redirectTo: 'inicio' }
 ];
 
-@NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
-  })
-  export class AppRoutingModule { }
