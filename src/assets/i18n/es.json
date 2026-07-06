@@ -2,6 +2,7 @@
   "NAVBAR": {
   "HOME": "Inicio",
   "SERVICES": "Maquillaje",
+  "NAILS": "Uñas",
   "PORTFOLIO": "Portafolio",
   "CONTACT": "Contacto"
 },
@@ -197,5 +198,65 @@
         "DESCRIPTION": "Maquillaje creativo para revistas, publicidad, pasarelas y redes sociales, adaptado completamente a la idea del cliente o la agencia."
       }
     }
+  },
+
+  "NAILS": {
+  "HERO": {
+    "TITLE": "ARTE EN UÑAS",
+    "SUBTITLE": "BIENVENIDA A <br><br> EDITH MANRIQUE <br><br> ESTUDIO DE UÑAS"
+  },
+
+  "ABOUT": {
+    "TITLE": "Acerca de nuestros servicios",
+    "DESCRIPTION": "En Edith Manrique Nail Studio ofrecemos servicios de uñas acrílicas diseñados para resaltar tu estilo y personalidad. Trabajamos con productos de alta calidad y cuidamos cada detalle para brindarte un acabado elegante, duradero y completamente personalizado."
+  },
+
+  "SERVICES": {
+    "TITLE": "Nuestros Diseños"
+  },
+
+  "BOOKING": {
+    "TITLE": "¿Quieres agendar una cita?",
+    "TEXT": "Escríbenos por Instagram:"
+  },
+
+  "BUTTON": "Ver Diseños",
+
+  "LIST": {
+    "ROUND": {
+      "NAME": "Uñas Acrílicas Redondas",
+      "DESCRIPTION": "Diseño clásico con bordes suaves y naturales, ideal para quienes buscan comodidad y un estilo elegante para cualquier ocasión."
+    },
+
+    "SQUARE": {
+      "NAME": "Uñas Acrílicas Cuadradas",
+      "DESCRIPTION": "Forma moderna con puntas rectas que aporta un acabado limpio y sofisticado, perfecta para lucir diseños llamativos."
+    },
+
+    "OVAL": {
+      "NAME": "Uñas Acrílicas Ovaladas",
+      "DESCRIPTION": "Diseño delicado y femenino que estiliza visualmente los dedos y ofrece una apariencia natural."
+    },
+
+    "SQUOVAL": {
+      "NAME": "Uñas Acrílicas Semicuadradas",
+      "DESCRIPTION": "Combinación entre la forma cuadrada y ovalada, ofreciendo un equilibrio entre elegancia, resistencia y comodidad."
+    },
+
+    "ALMOND": {
+      "NAME": "Uñas Acrílicas Almendra",
+      "DESCRIPTION": "Forma sofisticada que alarga visualmente las manos y brinda un estilo moderno y refinado."
+    },
+
+    "STILETTO": {
+      "NAME": "Uñas Acrílicas Stiletto",
+      "DESCRIPTION": "Diseño atrevido con terminación en punta, ideal para quienes desean un estilo elegante y de alto impacto."
+    },
+
+    "BALLERINA": {
+      "NAME": "Uñas Acrílicas Bailarina",
+      "DESCRIPTION": "También conocidas como Coffin, combinan elegancia y tendencia con una punta recta que estiliza las manos."
+    }
   }
+}
 }

@@ -1,13 +1,14 @@
 {
   "NAVBAR": {
-  "HOME": "Home",
-  "SERVICES": "Makeup",
-  "PORTFOLIO": "Portfolio",
-  "CONTACT": "Contact"
-},
-"UI": {
-  "SCROLL_MESSAGE": "➡ Scroll to see more options ➡"
-},
+    "HOME": "Home",
+    "SERVICES": "Makeup",
+    "NAILS": "Nails",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
+  },
+  "UI": {
+    "SCROLL_MESSAGE": "➡ Scroll to see more options ➡"
+  },
 
   "HOME": {
     "HERO": {
@@ -131,72 +132,190 @@
     }
   },
   "SERVICES": {
-  
+    "HERO": {
+      "TITLE": "BEAUTY SERVICES",
+      "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+    },
+
+    "ABOUT": {
+      "TITLE": "About Our Services",
+      "DESCRIPTION": "At Edith Manrique Makeup Studio, we offer specialized beauty services designed to enhance your unique beauty. From professional makeup and hairstyles for every occasion to personalized color analysis consultations that help you discover the shades that best complement your skin tone. Let our experience help you look and feel your absolute best!"
+    },
+
+    "MAKEUP": {
+      "TITLE": "Our Makeup Services"
+    },
+
+    "BOOKING": {
+      "TITLE": "Would you like to book an appointment?",
+      "TEXT": "Message us on Instagram:"
+    },
+
+    "BUTTON": "View Before & After",
+
+    "LIST": {
+      "SOCIAL_DAY": {
+        "NAME": "Daytime Social Makeup",
+        "DESCRIPTION": "Soft makeup in warm pink tones designed to enhance your natural beauty, perfect for everyday wear."
+      },
+
+      "SOCIAL_NIGHT": {
+        "NAME": "Evening Social Makeup",
+        "DESCRIPTION": "Makeup with blended warm tones, luminous highlights, and a touch of shimmer to make your eyes appear larger while enhancing intensity and radiance, always respecting your skin's natural color harmony."
+      },
+
+      "SMOKEY": {
+        "NAME": "Smokey Eyes Makeup",
+        "DESCRIPTION": "Smokey makeup in rich brown and dark shades with a touch of colorful glitter, designed to create a deep, bold, and captivating look."
+      },
+
+      "MATURE": {
+        "NAME": "Mature Skin Makeup with Thread Lifting",
+        "DESCRIPTION": "Illuminating makeup with soft blended tones that enhances natural beauty without emphasizing expression lines. Thread lifting may also be applied to help reduce the appearance of wrinkles, improve skin texture, and provide additional support."
+      },
+
+      "XV": {
+        "NAME": "Quinceañera Makeup",
+        "DESCRIPTION": "Customized makeup in neutral or glamorous tones with color, shimmer, and eyeliner, designed to enhance the quinceañera's natural beauty while maintaining a fresh, youthful appearance."
+      },
+
+      "BRIDAL_DAY": {
+        "NAME": "Daytime Bridal Makeup",
+        "DESCRIPTION": "Elegant and radiant bridal makeup featuring neutral, beige, brown, and pink tones, tailored to the bride's personal style and the type of ceremony."
+      },
+
+      "BRIDAL_NIGHT": {
+        "NAME": "Evening Bridal Makeup",
+        "DESCRIPTION": "Elegant and sophisticated bridal makeup with neutral tones, satin finishes, and shimmering eyeshadows, designed to enhance the bride's features for evening ceremonies."
+      },
+
+      "FULL_COLOR": {
+        "NAME": "Full Color Makeup",
+        "DESCRIPTION": "Vibrant and colorful makeup for special events, photoshoots, or everyday wear, focusing on enhancing the lips and eyes to create a fresh, radiant look."
+      },
+
+      "EDITORIAL": {
+        "NAME": "Editorial Makeup",
+        "DESCRIPTION": "Creative makeup inspired by fashion and artistic concepts, featuring graphic eyeliner, bold colors, glitter, and unique designs. Perfect for magazines, advertising campaigns, runway shows, and social media content, always tailored to the client's or agency's vision."
+      }
+    },
+    "NAILS": {
+      "HERO": {
+        "TITLE": "NAIL SERVICES",
+        "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> NAIL STUDIO"
+      },
+
+      "ABOUT": {
+        "TITLE": "About Our Services",
+        "DESCRIPTION": "At Edith Manrique Nail Studio, we offer acrylic nail services designed to enhance your style and personality. We use high-quality products and pay close attention to every detail to provide elegant, durable, and fully personalized results."
+      },
+
+      "SERVICES": {
+        "TITLE": "Our Nail Designs"
+      },
+
+      "BOOKING": {
+        "TITLE": "Would you like to book an appointment?",
+        "TEXT": "Contact us on Instagram:"
+      },
+
+      "BUTTON": "View Designs",
+
+      "LIST": {
+        "ROUND": {
+          "NAME": "Round Acrylic Nails",
+          "DESCRIPTION": "A classic design with soft, rounded edges, perfect for those looking for comfort and timeless elegance."
+        },
+
+        "SQUARE": {
+          "NAME": "Square Acrylic Nails",
+          "DESCRIPTION": "A modern shape with straight edges that creates a clean and sophisticated look, ideal for bold nail designs."
+        },
+
+        "OVAL": {
+          "NAME": "Oval Acrylic Nails",
+          "DESCRIPTION": "A delicate and feminine style that visually elongates the fingers while maintaining a natural appearance."
+        },
+
+        "SQUOVAL": {
+          "NAME": "Squoval Acrylic Nails",
+          "DESCRIPTION": "A combination of square and oval shapes, offering the perfect balance of elegance, durability, and comfort."
+        },
+
+        "ALMOND": {
+          "NAME": "Almond Acrylic Nails",
+          "DESCRIPTION": "An elegant shape that visually lengthens the fingers and provides a stylish, modern finish."
+        },
+
+        "STILETTO": {
+          "NAME": "Stiletto Acrylic Nails",
+          "DESCRIPTION": "A bold, pointed nail shape ideal for those who want a glamorous and eye-catching style."
+        },
+
+        "BALLERINA": {
+          "NAME": "Ballerina Acrylic Nails",
+          "DESCRIPTION": "Also known as Coffin Nails, this trendy shape features a tapered design with a flat tip for a sleek and sophisticated look."
+        }
+      }
+    }
+  },
+
+  "NAILS": {
   "HERO": {
-    "TITLE": "BEAUTY SERVICES",
-    "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> MAKEUP STUDIO"
+    "TITLE": "NAIL SERVICES",
+    "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> NAIL STUDIO"
   },
 
   "ABOUT": {
     "TITLE": "About Our Services",
-    "DESCRIPTION": "At Edith Manrique Makeup Studio, we offer specialized beauty services designed to enhance your unique beauty. From professional makeup and hairstyles for every occasion to personalized color analysis consultations that help you discover the shades that best complement your skin tone. Let our experience help you look and feel your absolute best!"
+    "DESCRIPTION": "At Edith Manrique Nail Studio, we offer acrylic nail services designed to enhance your style and personality. We use high-quality products and pay close attention to every detail to provide elegant, durable, and fully personalized results."
   },
 
-  "MAKEUP": {
-    "TITLE": "Our Makeup Services"
+  "SERVICES": {
+    "TITLE": "Our Nail Designs"
   },
 
   "BOOKING": {
     "TITLE": "Would you like to book an appointment?",
-    "TEXT": "Message us on Instagram:"
+    "TEXT": "Contact us on Instagram:"
   },
 
-  "BUTTON": "View Before & After",
+  "BUTTON": "View Designs",
 
   "LIST": {
-    "SOCIAL_DAY": {
-      "NAME": "Daytime Social Makeup",
-      "DESCRIPTION": "Soft makeup in warm pink tones designed to enhance your natural beauty, perfect for everyday wear."
+    "ROUND": {
+      "NAME": "Round Acrylic Nails",
+      "DESCRIPTION": "A classic design with soft, rounded edges, perfect for those looking for comfort and timeless elegance."
     },
 
-    "SOCIAL_NIGHT": {
-      "NAME": "Evening Social Makeup",
-      "DESCRIPTION": "Makeup with blended warm tones, luminous highlights, and a touch of shimmer to make your eyes appear larger while enhancing intensity and radiance, always respecting your skin's natural color harmony."
+    "SQUARE": {
+      "NAME": "Square Acrylic Nails",
+      "DESCRIPTION": "A modern shape with straight edges that creates a clean and sophisticated look, ideal for bold nail designs."
     },
 
-    "SMOKEY": {
-      "NAME": "Smokey Eyes Makeup",
-      "DESCRIPTION": "Smokey makeup in rich brown and dark shades with a touch of colorful glitter, designed to create a deep, bold, and captivating look."
+    "OVAL": {
+      "NAME": "Oval Acrylic Nails",
+      "DESCRIPTION": "A delicate and feminine style that visually elongates the fingers while maintaining a natural appearance."
     },
 
-    "MATURE": {
-      "NAME": "Mature Skin Makeup with Thread Lifting",
-      "DESCRIPTION": "Illuminating makeup with soft blended tones that enhances natural beauty without emphasizing expression lines. Thread lifting may also be applied to help reduce the appearance of wrinkles, improve skin texture, and provide additional support."
+    "SQUOVAL": {
+      "NAME": "Squoval Acrylic Nails",
+      "DESCRIPTION": "A combination of square and oval shapes, offering the perfect balance of elegance, durability, and comfort."
     },
 
-    "XV": {
-      "NAME": "Quinceañera Makeup",
-      "DESCRIPTION": "Customized makeup in neutral or glamorous tones with color, shimmer, and eyeliner, designed to enhance the quinceañera's natural beauty while maintaining a fresh, youthful appearance."
+    "ALMOND": {
+      "NAME": "Almond Acrylic Nails",
+      "DESCRIPTION": "An elegant shape that visually lengthens the fingers and provides a stylish, modern finish."
     },
 
-    "BRIDAL_DAY": {
-      "NAME": "Daytime Bridal Makeup",
-      "DESCRIPTION": "Elegant and radiant bridal makeup featuring neutral, beige, brown, and pink tones, tailored to the bride's personal style and the type of ceremony."
+    "STILETTO": {
+      "NAME": "Stiletto Acrylic Nails",
+      "DESCRIPTION": "A bold, pointed nail shape ideal for those who want a glamorous and eye-catching style."
     },
 
-    "BRIDAL_NIGHT": {
-      "NAME": "Evening Bridal Makeup",
-      "DESCRIPTION": "Elegant and sophisticated bridal makeup with neutral tones, satin finishes, and shimmering eyeshadows, designed to enhance the bride's features for evening ceremonies."
-    },
-
-    "FULL_COLOR": {
-      "NAME": "Full Color Makeup",
-      "DESCRIPTION": "Vibrant and colorful makeup for special events, photoshoots, or everyday wear, focusing on enhancing the lips and eyes to create a fresh, radiant look."
-    },
-
-    "EDITORIAL": {
-      "NAME": "Editorial Makeup",
-      "DESCRIPTION": "Creative makeup inspired by fashion and artistic concepts, featuring graphic eyeliner, bold colors, glitter, and unique designs. Perfect for magazines, advertising campaigns, runway shows, and social media content, always tailored to the client's or agency's vision."
+    "BALLERINA": {
+      "NAME": "Ballerina Acrylic Nails",
+      "DESCRIPTION": "Also known as Coffin Nails, this trendy shape features a tapered design with a flat tip for a sleek and sophisticated look."
     }
   }
 }

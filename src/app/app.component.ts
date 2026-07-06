@@ -21,7 +21,10 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   title = 'Belleza';
   mostrarMensajeDesliza = false;
+
   cargandoIdioma = false;
+
+  // Idioma que se mostrará como seleccionado
   idiomaSeleccionado = 'en';
 
   constructor(private translate: TranslateService) {
@@ -30,7 +33,12 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.translate.setDefaultLang('en');
 
     const idioma = localStorage.getItem('idioma') || 'en';
+
+    // Se aplica el idioma
     this.translate.use(idioma);
+
+    // Se guarda para mantener el botón activo
+    this.idiomaSeleccionado = idioma;
   }
 
   ngOnInit(): void {
@@ -58,18 +66,18 @@ export class AppComponent implements OnInit, AfterViewInit {
     AOS.refresh();
   }
 
-cambiarIdioma(idioma: string) {
+  cambiarIdioma(idioma: string) {
 
-  if (this.translate.currentLang === idioma) return;
+    if (this.idiomaSeleccionado === idioma) return;
 
-  this.idiomaSeleccionado = idioma;
-  this.cargandoIdioma = true;
+    this.idiomaSeleccionado = idioma;
+    this.cargandoIdioma = true;
 
-  setTimeout(() => {
-    this.translate.use(idioma);
-    localStorage.setItem('idioma', idioma);
-    this.cargandoIdioma = false;
-  }, 700);
-}
+    setTimeout(() => {
+      this.translate.use(idioma);
+      localStorage.setItem('idioma', idioma);
+      this.cargandoIdioma = false;
+    }, 700);
+  }
 
 }

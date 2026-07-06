@@ -1,0 +1,91 @@
+<main>
+  <!-- Hero Section -->
+  <section id="nails-welcome" class="welcome-container" data-aos="fade-up">
+
+    <div class="welcome-card" data-aos="fade-up">
+      <h1 [innerHTML]="'NAILS.HERO.TITLE' | translate"></h1><br>
+
+      <h2 [innerHTML]="'NAILS.HERO.SUBTITLE' | translate"></h2>
+    </div>
+
+    <div class="welcome-image" data-aos="fade-up">
+      <img src="assets/uñas/uñas1.jpeg" alt="Nail Services">
+    </div>
+
+  </section>
+
+  <!-- Acerca de -->
+  <section id="about-nails" class="about-container" data-aos="fade-up">
+
+    <div class="about-text">
+
+      <h3>{{ 'NAILS.ABOUT.TITLE' | translate }}</h3>
+
+      <div class="about-card">
+        <p>
+          {{ 'NAILS.ABOUT.DESCRIPTION' | translate }}
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Servicios -->
+  <section id="nails-details" class="makeup-section" data-aos="fade-up">
+
+    <h3>{{ 'NAILS.SERVICES.TITLE' | translate }}</h3>
+
+    <div class="makeup-list">
+
+      <div
+        class="makeup-item"
+        data-aos="fade-right"
+        *ngFor="let una of unas">
+
+        <img
+          [src]="una.foto"
+          [alt]="una.servicio | translate">
+
+        <div class="makeup-info">
+
+          <h4>
+            {{ una.servicio | translate }}
+          </h4>
+
+          <p>
+            {{ una.descripcion | translate }}
+          </p>
+
+          <p>
+            <strong>
+              {{ 'NAILS.BOOKING.TITLE' | translate }}
+            </strong>
+
+            {{ 'NAILS.BOOKING.TEXT' | translate }}
+
+            <a
+              href="https://www.instagram.com/edithmanriquemakeup?utm_source=qr&igsh=MTJoaHFuODFrcWt4eA=="
+              target="_blank"
+              rel="noopener">
+
+              <br><br>
+
+              &#64;edithmanriquemakeup
+
+            </a>
+          </p>
+
+          <!-- <button (click)="irAlPortafolio(una.id)">
+            {{ 'NAILS.BUTTON' | translate }}
+          </button> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>

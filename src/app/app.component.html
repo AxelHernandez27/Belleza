@@ -6,13 +6,19 @@
   <nav class="navbar-links">
     <a routerLink="/inicio">{{ 'NAVBAR.HOME' | translate }}</a>
     <a routerLink="/servicios">{{ 'NAVBAR.SERVICES' | translate }}</a>
+    <a routerLink="/unas">{{ 'NAVBAR.NAILS' | translate }}</a>
     <a routerLink="/portafolio">{{ 'NAVBAR.PORTFOLIO' | translate }}</a>
     <a routerLink="/contacto">{{ 'NAVBAR.CONTACT' | translate }}</a>
   </nav>
 
   <div class="lang-switch">
-    <button (click)="cambiarIdioma('es')">🇲🇽 ES</button>
-    <button (click)="cambiarIdioma('en')">🇺🇸 EN</button>
+    <button (click)="cambiarIdioma('es')" [class.active]="idiomaSeleccionado === 'es'">
+      🇲🇽 ES
+    </button>
+
+    <button (click)="cambiarIdioma('en')" [class.active]="idiomaSeleccionado === 'en'">
+      🇺🇸 EN
+    </button>
   </div>
 
   <div *ngIf="mostrarMensajeDesliza" class="mensaje-desliza">
@@ -34,7 +40,6 @@
   </div>
 </div>
 
-<!-- 🔥 ESTO VA FUERA DEL HEADER -->
 <main>
   <router-outlet></router-outlet>
 </main>
