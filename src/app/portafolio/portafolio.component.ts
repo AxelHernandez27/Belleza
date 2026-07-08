@@ -283,6 +283,123 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     'assets/video21.mp4',
   ];
 
+unasAlbum = [
+  {
+    id: 1,
+    titulo: '',
+    imagen: 'assets/uñas/uñas1.jpeg'
+  },
+  {
+    id: 2,
+    titulo: '',
+    imagen: 'assets/uñas/uñas2.jpeg'
+  },
+  {
+    id: 3,
+    titulo: '',
+    imagen: 'assets/uñas/uñas3.jpeg'
+  },
+  {
+    id: 4,
+    titulo: '',
+    imagen: 'assets/uñas/uñas4.jpeg'
+  },
+  {
+    id: 5,
+    titulo: '',
+    imagen: 'assets/uñas/uñas5.jpeg'
+  },
+  {
+    id: 6,
+    titulo: '',
+    imagen: 'assets/uñas/uñas6.jpeg'
+  },
+  {
+    id: 7,
+    titulo: '',
+    imagen: 'assets/uñas/uñas7.jpeg'
+  },
+  {
+    id: 8,
+    titulo: '',
+    imagen: 'assets/uñas/uñas8.jpeg'
+  },
+  {
+    id: 9,
+    titulo: '',
+    imagen: 'assets/uñas/uñas9.jpeg'
+  },
+  {
+    id: 10,
+    titulo: '',
+    imagen: 'assets/uñas/uñas10.jpeg'
+  },
+  {
+    id: 11,
+    titulo: '',
+    imagen: 'assets/uñas/uñas11.jpeg'
+  },
+  {
+    id: 12,
+    titulo: '',
+    imagen: 'assets/uñas/uñas12.jpeg'
+  },
+  {
+    id: 13,
+    titulo: '',
+    imagen: 'assets/uñas/uñas13.jpeg'
+  },
+  {
+    id: 14,
+    titulo: '',
+    imagen: 'assets/uñas/uñas14.jpeg'
+  },
+  {
+    id: 15,
+    titulo: '',
+    imagen: 'assets/uñas/uñas15.jpeg'
+  },
+  {
+    id: 16,
+    titulo: '',
+    imagen: 'assets/uñas/uñas16.jpeg'
+  },
+  {
+    id: 17,
+    titulo: '',
+    imagen: 'assets/uñas/uñas17.jpeg'
+  },
+  {
+    id: 18,
+    titulo: '',
+    imagen: 'assets/uñas/uñas18.jpeg'
+  },
+  {
+    id: 19,
+    titulo: '',
+    imagen: 'assets/uñas/uñas19.jpeg'
+  },
+  {
+    id: 20,
+    titulo: '',
+    imagen: 'assets/uñas/uñas20.jpeg'
+  },
+  {
+    id: 21,
+    titulo: '',
+    imagen: 'assets/uñas/uñas21.jpeg'
+  },
+  {
+    id: 22,
+    titulo: '',
+    imagen: 'assets/uñas/uñas22.jpeg'
+  },
+  {
+    id: 23,
+    titulo: '',
+    imagen: 'assets/uñas/uñas23.jpeg'
+  }
+];
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -301,6 +418,7 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     }
   }
 
+  
   ngAfterViewInit() {
     new Swiper('.video-swiper', {
       slidesPerView: 1,
@@ -345,6 +463,36 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
     },
   });
 
+  new Swiper('.nails-swiper', {
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+
+  navigation: {
+    nextEl: '.nails-next',
+    prevEl: '.nails-prev',
+  },
+
+  pagination: {
+    el: '.nails-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+
+});
+
 
     // Asegura que los videos estén silenciados y no permitan desmuteo
     const videos = document.querySelectorAll<HTMLVideoElement>('.video-item');
@@ -357,6 +505,8 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
       });
     });
   }
+
+  
 
   closeModal() {
     this.isModalOpen = false;

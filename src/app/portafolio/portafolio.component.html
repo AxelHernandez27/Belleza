@@ -84,6 +84,42 @@
   </div>
 </section>
 
+<!-- Uñas -->
+<section id="unas-portafolio" class="certificados" data-aos="fade-up">
+
+  <h1 class="section-title">
+    {{ 'PORTAFOLIO.NAILS.TITLE' | translate }}
+  </h1>
+
+  <p class="section-subtitle">
+    {{ 'PORTAFOLIO.NAILS.SUBTITLE' | translate }}
+  </p>
+
+  <div class="swiper nails-swiper">
+
+    <div class="swiper-wrapper">
+
+      <div
+        class="swiper-slide"
+        *ngFor="let una of unasAlbum">
+
+        <img
+          [src]="una.imagen"
+          [alt]="una.titulo"
+          class="certificado-item">
+
+      </div>
+
+    </div>
+
+    <div class="nails-next swiper-button-next"></div>
+    <div class="nails-prev swiper-button-prev"></div>
+    <div class="nails-pagination"></div>
+
+  </div>
+
+</section>
+
 <!-- Peinados -->
 <section id="peinados" class="peinados" data-aos="fade-up">
   <h1 class="section-title" data-aos="fade-up">
