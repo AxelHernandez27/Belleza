@@ -1,0 +1,112 @@
+<main>
+
+  <!-- Hero Section -->
+  <section id="lashes-welcome" class="welcome-container" data-aos="fade-up">
+
+    <div class="welcome-card" data-aos="fade-up">
+      <h1 [innerHTML]="'LASHES.HERO.TITLE' | translate"></h1><br>
+
+      <h2 [innerHTML]="'LASHES.HERO.SUBTITLE' | translate"></h2>
+    </div>
+
+    <div class="welcome-image" data-aos="fade-up">
+      <img src="assets/pestañas/pestaña20.jpeg" alt="Lash Services">
+    </div>
+
+  </section>
+
+  <!-- Acerca de -->
+  <section id="about-lashes" class="about-container" data-aos="fade-up">
+
+    <div class="about-text">
+
+      <h3>{{ 'LASHES.ABOUT.TITLE' | translate }}</h3>
+
+      <div class="about-card">
+        <p>
+          {{ 'LASHES.ABOUT.DESCRIPTION' | translate }}
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+<!-- Diferencias entre estilos -->
+<section id="lashes-guide" class="lashes-guide" data-aos="fade-up">
+
+  <h3>{{ 'LASHES.GUIDE.TITLE' | translate }}</h3>
+
+  <p class="guide-description">
+    {{ 'LASHES.GUIDE.DESCRIPTION' | translate }}
+  </p>
+
+  <div class="guide-image">
+
+  <img
+  [src]="guiaImagen"
+  [alt]="'LASHES.GUIDE.TITLE' | translate">
+
+  </div>
+
+</section>
+
+  <!-- Servicios -->
+  <section id="lashes-details" class="makeup-section" data-aos="fade-up">
+
+    <h3>{{ 'LASHES.SERVICES.TITLE' | translate }}</h3>
+
+    <div class="makeup-list">
+
+      <div
+        class="makeup-item"
+        data-aos="fade-right"
+        *ngFor="let pestana of pestanas">
+
+        <img
+          [src]="pestana.foto"
+          [alt]="pestana.servicio | translate">
+
+        <div class="makeup-info">
+
+          <h4>
+            {{ pestana.servicio | translate }}
+          </h4>
+
+          <p>
+            {{ pestana.descripcion | translate }}
+          </p>
+
+          <p>
+            <strong>
+              {{ 'LASHES.BOOKING.TITLE' | translate }}
+            </strong>
+
+            {{ 'LASHES.BOOKING.TEXT' | translate }}
+
+            <a
+              href="https://www.instagram.com/edithmanriquemakeup?utm_source=qr&igsh=MTJoaHFuODFrcWt4eA=="
+              target="_blank"
+              rel="noopener">
+
+              <br><br>
+
+              &#64;edithmanriquemakeup
+
+            </a>
+          </p>
+
+          <!--
+          <button (click)="irAlPortafolio(pestana.id)">
+            {{ 'LASHES.BUTTON' | translate }}
+          </button>
+          -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>

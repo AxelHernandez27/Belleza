@@ -3,6 +3,7 @@
     "HOME": "Home",
     "SERVICES": "Makeup",
     "NAILS": "Nails",
+    "LASHES": "Lashes",
     "PORTFOLIO": "Portfolio",
     "CONTACT": "Contact"
   },
@@ -72,10 +73,14 @@
       "SUBTITLE": "Explore my latest makeup creations."
     },
     "NAILS": {
-  "TITLE": "💅 My Nail Portfolio",
-  "SUBTITLE": "Discover some of my acrylic nail designs and recent work."
-},
+      "TITLE": "💅 My Nail Portfolio",
+      "SUBTITLE": "Discover some of my acrylic nail designs and recent work."
+    },
 
+    "LASHES": {
+      "TITLE": "Eyelash Extensions Portfolio",
+      "SUBTITLE": "Explore some of our eyelash extension work featuring a variety of techniques and styles, carefully designed to enhance every client's natural beauty."
+    },
     "HAIRSTYLES": {
       "TITLE": "💇‍♀️ Hairstyles with Different Curl Styles",
       "SUBTITLE": "Discover my exclusive hairstyles designed for every occasion. Beauty is all in the details."
@@ -202,125 +207,135 @@
         "NAME": "Editorial Makeup",
         "DESCRIPTION": "Creative makeup inspired by fashion and artistic concepts, featuring graphic eyeliner, bold colors, glitter, and unique designs. Perfect for magazines, advertising campaigns, runway shows, and social media content, always tailored to the client's or agency's vision."
       }
-    },
-    "NAILS": {
-      "HERO": {
-        "TITLE": "NAIL SERVICES",
-        "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> NAIL STUDIO"
-      },
-
-      "ABOUT": {
-        "TITLE": "About Our Services",
-        "DESCRIPTION": "At Edith Manrique Nail Studio, we offer acrylic nail services designed to enhance your style and personality. We use high-quality products and pay close attention to every detail to provide elegant, durable, and fully personalized results."
-      },
-
-      "SERVICES": {
-        "TITLE": "Our Nail Designs"
-      },
-
-      "BOOKING": {
-        "TITLE": "Would you like to book an appointment?",
-        "TEXT": "Contact us on Instagram:"
-      },
-
-      "BUTTON": "View Designs",
-
-      "LIST": {
-        "ROUND": {
-          "NAME": "Round Acrylic Nails",
-          "DESCRIPTION": "A classic design with soft, rounded edges, perfect for those looking for comfort and timeless elegance."
-        },
-
-        "SQUARE": {
-          "NAME": "Square Acrylic Nails",
-          "DESCRIPTION": "A modern shape with straight edges that creates a clean and sophisticated look, ideal for bold nail designs."
-        },
-
-        "OVAL": {
-          "NAME": "Oval Acrylic Nails",
-          "DESCRIPTION": "A delicate and feminine style that visually elongates the fingers while maintaining a natural appearance."
-        },
-
-        "SQUOVAL": {
-          "NAME": "Squoval Acrylic Nails",
-          "DESCRIPTION": "A combination of square and oval shapes, offering the perfect balance of elegance, durability, and comfort."
-        },
-
-        "ALMOND": {
-          "NAME": "Almond Acrylic Nails",
-          "DESCRIPTION": "An elegant shape that visually lengthens the fingers and provides a stylish, modern finish."
-        },
-
-        "STILETTO": {
-          "NAME": "Stiletto Acrylic Nails",
-          "DESCRIPTION": "A bold, pointed nail shape ideal for those who want a glamorous and eye-catching style."
-        },
-
-        "BALLERINA": {
-          "NAME": "Ballerina Acrylic Nails",
-          "DESCRIPTION": "Also known as Coffin Nails, this trendy shape features a tapered design with a flat tip for a sleek and sophisticated look."
-        }
-      }
     }
   },
 
   "NAILS": {
-  "HERO": {
-    "TITLE": "NAIL SERVICES",
-    "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> NAIL STUDIO"
+    "HERO": {
+      "TITLE": "NAIL SERVICES",
+      "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> NAIL STUDIO"
+    },
+
+    "ABOUT": {
+      "TITLE": "About Our Services",
+      "DESCRIPTION": "At Edith Manrique Nail Studio, we offer acrylic nail services designed to enhance your style and personality. We use high-quality products and pay close attention to every detail to provide elegant, durable, and fully personalized results."
+    },
+
+    "SERVICES": {
+      "TITLE": "Our Nail Designs"
+    },
+
+    "BOOKING": {
+      "TITLE": "Would you like to book an appointment?",
+      "TEXT": "Contact us on Instagram:"
+    },
+
+    "BUTTON": "View Designs",
+
+    "LIST": {
+      "ROUND": {
+        "NAME": "Round Acrylic Nails",
+        "DESCRIPTION": "A classic design with soft, rounded edges, perfect for those looking for comfort and timeless elegance."
+      },
+
+      "SQUARE": {
+        "NAME": "Square Acrylic Nails",
+        "DESCRIPTION": "A modern shape with straight edges that creates a clean and sophisticated look, ideal for bold nail designs."
+      },
+
+      "OVAL": {
+        "NAME": "Oval Acrylic Nails",
+        "DESCRIPTION": "A delicate and feminine style that visually elongates the fingers while maintaining a natural appearance."
+      },
+
+      "SQUOVAL": {
+        "NAME": "Squoval Acrylic Nails",
+        "DESCRIPTION": "A combination of square and oval shapes, offering the perfect balance of elegance, durability, and comfort."
+      },
+
+      "ALMOND": {
+        "NAME": "Almond Acrylic Nails",
+        "DESCRIPTION": "An elegant shape that visually lengthens the fingers and provides a stylish, modern finish."
+      },
+
+      "STILETTO": {
+        "NAME": "Stiletto Acrylic Nails",
+        "DESCRIPTION": "A bold, pointed nail shape ideal for those who want a glamorous and eye-catching style."
+      },
+
+      "BALLERINA": {
+        "NAME": "Ballerina Acrylic Nails",
+        "DESCRIPTION": "Also known as Coffin Nails, this trendy shape features a tapered design with a flat tip for a sleek and sophisticated look."
+      },
+      "SEMIPERMANENT_GEL": {
+        "NAME": "Semi-Permanent Gel",
+        "DESCRIPTION": "A gel polish technique that provides a glossy, long-lasting finish. Recommended for strong natural nails, with a durability of approximately 15 to 21 days depending on nail care and natural nail growth."
+      }
+    }
   },
-
-  "ABOUT": {
-    "TITLE": "About Our Services",
-    "DESCRIPTION": "At Edith Manrique Nail Studio, we offer acrylic nail services designed to enhance your style and personality. We use high-quality products and pay close attention to every detail to provide elegant, durable, and fully personalized results."
-  },
-
-  "SERVICES": {
-    "TITLE": "Our Nail Designs"
-  },
-
-  "BOOKING": {
-    "TITLE": "Would you like to book an appointment?",
-    "TEXT": "Contact us on Instagram:"
-  },
-
-  "BUTTON": "View Designs",
-
-  "LIST": {
-    "ROUND": {
-      "NAME": "Round Acrylic Nails",
-      "DESCRIPTION": "A classic design with soft, rounded edges, perfect for those looking for comfort and timeless elegance."
+  "LASHES": {
+    "HERO": {
+      "TITLE": "EYELASH EXTENSIONS",
+      "SUBTITLE": "WELCOME TO <br><br> EDITH MANRIQUE <br><br> BEAUTY STUDIO"
     },
 
-    "SQUARE": {
-      "NAME": "Square Acrylic Nails",
-      "DESCRIPTION": "A modern shape with straight edges that creates a clean and sophisticated look, ideal for bold nail designs."
+    "ABOUT": {
+      "TITLE": "About Our Services",
+      "DESCRIPTION": "At Edith Manrique Beauty Studio, we offer personalized eyelash extensions designed to enhance your natural beauty. We use professional techniques and high-quality materials to provide comfortable, safe, and long-lasting results tailored to your style."
     },
 
-    "OVAL": {
-      "NAME": "Oval Acrylic Nails",
-      "DESCRIPTION": "A delicate and feminine style that visually elongates the fingers while maintaining a natural appearance."
+    "GUIDE": {
+      "TITLE": "Lash Style Guide",
+      "DESCRIPTION": "Learn about the differences between each eyelash extension style and discover which one best suits your desired look."
     },
 
-    "SQUOVAL": {
-      "NAME": "Squoval Acrylic Nails",
-      "DESCRIPTION": "A combination of square and oval shapes, offering the perfect balance of elegance, durability, and comfort."
+    "SERVICES": {
+      "TITLE": "Our Styles"
     },
 
-    "ALMOND": {
-      "NAME": "Almond Acrylic Nails",
-      "DESCRIPTION": "An elegant shape that visually lengthens the fingers and provides a stylish, modern finish."
+    "BOOKING": {
+      "TITLE": "Would you like to book an appointment?",
+      "TEXT": "Contact us on Instagram:"
     },
 
-    "STILETTO": {
-      "NAME": "Stiletto Acrylic Nails",
-      "DESCRIPTION": "A bold, pointed nail shape ideal for those who want a glamorous and eye-catching style."
-    },
-
-    "BALLERINA": {
-      "NAME": "Ballerina Acrylic Nails",
-      "DESCRIPTION": "Also known as Coffin Nails, this trendy shape features a tapered design with a flat tip for a sleek and sophisticated look."
+    "BUTTON": "See More",
+    "LIST": {
+      "CLASSIC_1X": {
+        "NAME": "Classic 1x / Natural",
+        "DESCRIPTION": "One extension is applied to each natural lash, creating a soft, elegant, and natural-looking result."
+      },
+      "HYBRID": {
+        "NAME": "Hybrid",
+        "DESCRIPTION": "A combination of classic and volume techniques for added texture, fullness, and definition."
+      },
+      "VOLUME_3D": {
+        "NAME": "3D Volume",
+        "DESCRIPTION": "Application of 3D fans to create fuller lashes while maintaining a lightweight and comfortable feel."
+      },
+      "HAWAIIAN_VOLUME": {
+        "NAME": "Hawaiian Volume",
+        "DESCRIPTION": "A soft and fluffy volume technique that provides a glamorous yet natural-looking finish."
+      },
+      "MEGA_VOLUME": {
+        "NAME": "Mega Volume",
+        "DESCRIPTION": "Perfect for clients seeking an intense, bold look with maximum lash density."
+      },
+      "VOLUME_WISPY": {
+        "NAME": "Volume / Wispy",
+        "DESCRIPTION": "A trendy wispy style that combines different lash lengths for a textured and dimensional look."
+      },
+      "CLASSIC_MASCARA": {
+        "NAME": "Classic / Mascara Effect",
+        "DESCRIPTION": "Creates the appearance of wearing mascara, giving lashes extra definition and fullness."
+      },
+      "NATURAL_CLASSIC": {
+        "NAME": "Natural Classic",
+        "DESCRIPTION": "A subtle classic style that enhances your natural lashes with a soft and elegant finish."
+      },
+      "MEGA_HAWAIIAN": {
+        "NAME": "Mega Volume / Hawaiian",
+        "DESCRIPTION": "A combination of mega volume and the Hawaiian effect to create a bold, lightweight, and multidimensional look."
+      }
     }
   }
-}
 }

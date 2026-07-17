@@ -3,6 +3,7 @@
     "HOME": "Inicio",
     "SERVICES": "Maquillaje",
     "NAILS": "Uñas",
+    "LASHES": "Pestañas",
     "PORTFOLIO": "Portafolio",
     "CONTACT": "Contacto"
   },
@@ -70,10 +71,15 @@
       "TITLE": "💼 Mi Trabajo Reciente!",
       "SUBTITLE": "Explora mis nuevos trabajos."
     },
-    
+
     "NAILS": {
       "TITLE": "💅 Mi trabajo en uñas",
       "SUBTITLE": "Explora algunos de mis diseños y trabajos realizados en uñas acrílicas."
+    },
+
+    "LASHES": {
+      "TITLE": "Portafolio de Extensiones de Pestañas",
+      "SUBTITLE": "Descubre algunos de nuestros trabajos realizados con diferentes técnicas y estilos de extensiones de pestañas, diseñados para realzar la belleza natural de cada mirada."
     },
 
     "HAIRSTYLES": {
@@ -261,6 +267,76 @@
       "BALLERINA": {
         "NAME": "Uñas Acrílicas Bailarina",
         "DESCRIPTION": "También conocidas como Coffin, combinan elegancia y tendencia con una punta recta que estiliza las manos."
+      },
+      
+      "SEMIPERMANENT_GEL": {
+        "NAME": "Gel Semipermanente",
+        "DESCRIPTION": "Técnica que utiliza esmalte en gel para lograr un acabado brillante y duradero. Recomendada para uñas de textura fuerte, con una duración aproximada de 15 a 21 días, dependiendo de los cuidados y del crecimiento natural de la uña."
+      }
+    }
+  },
+
+  "LASHES": {
+    "HERO": {
+      "TITLE": "EXTENSIONES DE PESTAÑAS",
+      "SUBTITLE": "BIENVENIDA A <br><br> EDITH MANRIQUE <br><br> ESTUDIO DE BELLEZA"
+    },
+
+    "ABOUT": {
+      "TITLE": "Acerca de nuestros servicios",
+      "DESCRIPTION": "En Edith Manrique Beauty Studio ofrecemos extensiones de pestañas personalizadas para resaltar tu mirada. Trabajamos con técnicas profesionales y materiales de alta calidad para lograr un acabado cómodo, seguro y duradero, adaptado al estilo que mejor se adapte a ti."
+    },
+    "GUIDE": {
+      "TITLE": "Guía de estilos de pestañas",
+      "DESCRIPTION": "Conoce las diferencias entre cada estilo de extensiones de pestañas y descubre cuál se adapta mejor al resultado que deseas."
+    },
+    "SERVICES": {
+      "TITLE": "Nuestros Diseños"
+    },
+
+    "BOOKING": {
+      "TITLE": "¿Quieres agendar una cita?",
+      "TEXT": "Escríbenos por Instagram:"
+    },
+
+    "BUTTON": "Ver más",
+
+    "LIST": {
+      "CLASSIC_1X": {
+        "NAME": "Clásicas 1x / Natural",
+        "DESCRIPTION": "Aplicación de una extensión por cada pestaña natural para lograr un efecto delicado, elegante y muy natural."
+      },
+      "HYBRID": {
+        "NAME": "Híbridas",
+        "DESCRIPTION": "Combinación de la técnica clásica y de volumen para obtener una mirada con mayor densidad, textura y definición."
+      },
+      "VOLUME_3D": {
+        "NAME": "Volumen 3D",
+        "DESCRIPTION": "Aplicación de abanicos 3D que aportan mayor volumen y una apariencia más intensa sin perder ligereza."
+      },
+      "HAWAIIAN_VOLUME": {
+        "NAME": "Volumen Hawaiano",
+        "DESCRIPTION": "Diseño ligero y esponjoso que proporciona un efecto voluminoso con un acabado suave y elegante."
+      },
+      "MEGA_VOLUME": {
+        "NAME": "Mega Volumen",
+        "DESCRIPTION": "Ideal para quienes buscan una mirada impactante con máxima densidad, profundidad y dramatismo."
+      },
+      "VOLUME_WISPY": {
+        "NAME": "Volumen / Wispy",
+        "DESCRIPTION": "Diseño moderno que combina diferentes longitudes para crear un efecto ligero, texturizado y con mayor dimensión."
+      },
+      "CLASSIC_MASCARA": {
+        "NAME": "Clásicas / Rímel",
+        "DESCRIPTION": "Acabado similar al efecto del rímel, logrando pestañas definidas, oscuras y con mayor presencia."
+      },
+      "NATURAL_CLASSIC": {
+        "NAME": "Clásicas Naturales",
+        "DESCRIPTION": "Diseño sutil que realza la belleza natural de tus pestañas, perfecto para un look elegante y discreto."
+      },
+      "MEGA_HAWAIIAN": {
+        "NAME": "Mega Volumen / Hawaiano",
+        "DESCRIPTION": "Combinación del mega volumen con el efecto hawaiano para conseguir una mirada intensa, ligera y con gran dimensión."
       }
     }
   }

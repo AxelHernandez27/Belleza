@@ -400,6 +400,108 @@ unasAlbum = [
     imagen: 'assets/uñas/uñas23.jpeg'
   }
 ];
+pestanasAlbum = [
+  {
+    id: 1,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña1.jpeg'
+  },
+  {
+    id: 2,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña2.jpeg'
+  },
+  {
+    id: 3,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña3.jpeg'
+  },
+  {
+    id: 4,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña4.jpeg'
+  },
+  {
+    id: 5,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña5.jpeg'
+  },
+  {
+    id: 6,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña6.jpeg'
+  },
+  {
+    id: 7,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña7.jpeg'
+  },
+  {
+    id: 8,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña8.jpeg'
+  },
+  {
+    id: 9,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña9.jpeg'
+  },
+  {
+    id: 10,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña10.jpeg'
+  },
+  {
+    id: 11,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña11.jpeg'
+  },
+  {
+    id: 12,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña12.jpeg'
+  },
+  {
+    id: 13,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña13.jpeg'
+  },
+  {
+    id: 14,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña14.jpeg'
+  },
+  {
+    id: 15,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña15.jpeg'
+  },
+  {
+    id: 16,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña16.jpeg'
+  },
+  {
+    id: 17,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña17.jpeg'
+  },
+  {
+    id: 18,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña18.jpeg'
+  },
+  {
+    id: 19,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña19.jpeg'
+  },
+  {
+    id: 20,
+    titulo: '',
+    imagen: 'assets/pestañas/pestaña20.jpeg'
+  }
+];
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -491,6 +593,31 @@ unasAlbum = [
     },
   },
 
+});
+
+new Swiper('.lashes-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+
+  navigation: {
+    nextEl: '.lashes-next',
+    prevEl: '.lashes-prev',
+  },
+
+  pagination: {
+    el: '.lashes-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 

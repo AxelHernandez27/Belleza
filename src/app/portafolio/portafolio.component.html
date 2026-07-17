@@ -119,6 +119,41 @@
   </div>
 
 </section>
+<!-- Pestañas -->
+<section id="pestanas-portafolio" class="certificados" data-aos="fade-up">
+
+  <h1 class="section-title">
+    {{ 'PORTAFOLIO.LASHES.TITLE' | translate }}
+  </h1>
+
+  <p class="section-subtitle">
+    {{ 'PORTAFOLIO.LASHES.SUBTITLE' | translate }}
+  </p>
+
+  <div class="swiper lashes-swiper">
+
+    <div class="swiper-wrapper">
+
+      <div
+        class="swiper-slide"
+        *ngFor="let pestana of pestanasAlbum">
+
+        <img
+          [src]="pestana.imagen"
+          [alt]="pestana.titulo"
+          class="certificado-item">
+
+      </div>
+
+    </div>
+
+    <div class="lashes-next swiper-button-next"></div>
+    <div class="lashes-prev swiper-button-prev"></div>
+    <div class="lashes-pagination"></div>
+
+  </div>
+
+</section>
 
 <!-- Peinados -->
 <section id="peinados" class="peinados" data-aos="fade-up">
