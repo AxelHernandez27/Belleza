@@ -485,3 +485,84 @@ button:hover {
     font-weight: 700;
     margin-bottom: 12px;
 }
+
+/* Tablets */
+@media (max-width: 992px){
+
+    .mapping-card{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mapping-card img{
+        width: 220px;
+        height: 160px;
+        margin-bottom: 15px;
+    }
+
+    .mapping-card h4{
+        font-size: 1.5rem;
+    }
+
+    .mapping-card p{
+        font-size: 1rem;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px){
+
+    .mapping-grid{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .mapping-card{
+        width:100%;
+        padding:18px;
+    }
+
+    .mapping-card img{
+        width:100%;
+        max-width:260px;
+        height:auto;
+        aspect-ratio:4/3;
+        object-fit:cover;
+    }
+
+    .mapping-card h4{
+        font-size:1.3rem;
+    }
+
+    .mapping-card p{
+        font-size:.95rem;
+        line-height:1.6;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width:480px){
+
+    .lashes-mapping{
+        padding:20px 15px;
+    }
+
+    .mapping-card{
+        padding:15px;
+        border-radius:15px;
+    }
+
+    .mapping-card img{
+        max-width:220px;
+    }
+
+    .mapping-card h4{
+        font-size:1.2rem;
+    }
+
+    .mapping-card p{
+        font-size:.9rem;
+    }
+}
