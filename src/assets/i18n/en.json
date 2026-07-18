@@ -298,10 +298,40 @@
       "TEXT": "Contact us on Instagram:"
     },
 
+    "MAPPING": {
+      "HEADER": "Individual Eyelash Extension Techniques",
+      "DESCRIPTION": "Discover the main individual lash extension techniques and find the one that best matches your desired look.",
+
+      "CLASSIC": {
+        "NAME": "Classic",
+        "DESCRIPTION": "One extension is applied to each natural lash, creating a soft, lightweight, and natural-looking finish."
+      },
+
+      "WET_EFFECT": {
+        "NAME": "Wet / Mascara Effect",
+        "DESCRIPTION": "A narrow fan of 2 to 4 extensions is applied to each natural lash to create the appearance of freshly applied mascara."
+      },
+
+      "HAWAIIAN_VOLUME": {
+        "NAME": "Hawaiian Volume",
+        "DESCRIPTION": "A Y-shaped extension is applied to each natural lash, creating a soft, full, and lightweight effect."
+      },
+
+      "VOLUME": {
+        "NAME": "Volume",
+        "DESCRIPTION": "Fans of 2 to 7 extensions are applied to each natural lash for a fuller, more dramatic appearance."
+      },
+
+      "HYBRID": {
+        "NAME": "Hybrid",
+        "DESCRIPTION": "Combines the classic technique (one extension per natural lash) with volume fans of 2 to 7 extensions for the perfect balance between natural and full."
+      }
+    },
+
     "BUTTON": "See More",
     "LIST": {
-      "CLASSIC_1X": {
-        "NAME": "Classic 1x / Natural",
+      "CLASSIC": {
+        "NAME": "Classic / Natural",
         "DESCRIPTION": "One extension is applied to each natural lash, creating a soft, elegant, and natural-looking result."
       },
       "HYBRID": {
@@ -332,9 +362,28 @@
         "NAME": "Natural Classic",
         "DESCRIPTION": "A subtle classic style that enhances your natural lashes with a soft and elegant finish."
       },
-      "MEGA_HAWAIIAN": {
-        "NAME": "Mega Volume / Hawaiian",
-        "DESCRIPTION": "A combination of mega volume and the Hawaiian effect to create a bold, lightweight, and multidimensional look."
+      "CLASSIC_1X1": {
+        "NAME": "Classic 1x1",
+        "DESCRIPTION": "A classic lash extension technique where one extension is applied to each natural lash, creating a defined, elegant, and natural-looking finish tailored to enhance your eyes."
+      },
+      "NATURAL_EFFECT": {
+        "NAME": "Natural",
+        "DESCRIPTION": "Follows the exact shape of your natural lash line. The length remains even, making your lashes appear fuller without changing the natural shape of your eyes."
+      },
+
+      "SQUIRREL_EFFECT": {
+        "NAME": "Squirrel",
+        "DESCRIPTION": "Similar to the Cat Eye style, but the longest lashes are placed slightly before the outer corner of the eye, approximately aligned with the eyebrow arch, finishing with shorter lashes at the outer edge."
+      },
+
+      "CAT_EYE": {
+        "NAME": "Cat Eye",
+        "DESCRIPTION": "The lashes start very short at the inner corner and gradually increase in length until reaching the longest lashes at the outer corner, creating an elongated and elegant look."
+      },
+
+      "DOLL_EYE": {
+        "NAME": "Doll Eye",
+        "DESCRIPTION": "The longest lashes are placed in the center of the eye, directly above the pupil, and gradually become shorter toward both the inner and outer corners, creating a wide-eyed appearance."
       }
     }
   }

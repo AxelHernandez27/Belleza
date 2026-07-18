@@ -50,6 +50,39 @@
 
 </section>
 
+<!-- Extensiones de pestañas pelo a pelo -->
+<!-- Extensiones de pestañas pelo a pelo -->
+<section id="lashes-mapping" class="lashes-mapping" data-aos="fade-up">
+
+  <h2 class="mapping-title">
+    {{ 'LASHES.MAPPING.HEADER' | translate }}
+  </h2>
+
+  <p class="mapping-description">
+    {{ 'LASHES.MAPPING.DESCRIPTION' | translate }}
+  </p>
+
+  <div class="mapping-grid">
+
+    <div class="mapping-card" *ngFor="let estilo of estilosPeloAPelo">
+
+      <img
+        [src]="estilo.foto"
+        [alt]="estilo.nombre | translate">
+
+      <h4>
+        {{ estilo.nombre | translate }}
+      </h4>
+
+      <p>
+        {{ estilo.descripcion | translate }}
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
   <!-- Servicios -->
   <section id="lashes-details" class="makeup-section" data-aos="fade-up">
 

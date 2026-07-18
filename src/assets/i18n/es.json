@@ -268,7 +268,7 @@
         "NAME": "Uñas Acrílicas Bailarina",
         "DESCRIPTION": "También conocidas como Coffin, combinan elegancia y tendencia con una punta recta que estiliza las manos."
       },
-      
+
       "SEMIPERMANENT_GEL": {
         "NAME": "Gel Semipermanente",
         "DESCRIPTION": "Técnica que utiliza esmalte en gel para lograr un acabado brillante y duradero. Recomendada para uñas de textura fuerte, con una duración aproximada de 15 a 21 días, dependiendo de los cuidados y del crecimiento natural de la uña."
@@ -299,11 +299,41 @@
       "TEXT": "Escríbenos por Instagram:"
     },
 
+    "MAPPING": {
+      "HEADER": "Extensiones de Pestañas Pelo a Pelo",
+      "DESCRIPTION": "Conoce las principales técnicas de aplicación pelo a pelo y descubre cuál se adapta mejor al resultado que deseas obtener.",
+
+      "CLASSIC": {
+        "NAME": "Clásicas",
+        "DESCRIPTION": "Colocamos una extensión sobre cada pestaña natural para lograr un acabado elegante, ligero y completamente natural."
+      },
+
+      "WET_EFFECT": {
+        "NAME": "Efecto Rímel / Mojado",
+        "DESCRIPTION": "Aplicamos una espiga de 2 a 4 extensiones sobre cada pestaña natural para conseguir un efecto similar al rímel recién aplicado."
+      },
+
+      "HAWAIIAN_VOLUME": {
+        "NAME": "Volumen Hawaiano",
+        "DESCRIPTION": "Colocamos una extensión en forma de Y sobre cada pestaña natural para crear un acabado ligero, uniforme y con mayor volumen."
+      },
+
+      "VOLUME": {
+        "NAME": "Volumen",
+        "DESCRIPTION": "Aplicamos abanicos de 2 a 7 extensiones sobre cada pestaña natural para lograr una mirada más densa y llamativa."
+      },
+
+      "HYBRID": {
+        "NAME": "Híbridas",
+        "DESCRIPTION": "Combinamos la técnica clásica (1 extensión por pestaña) con abanicos de volumen de 2 a 7 extensiones para obtener un acabado equilibrado entre naturalidad y volumen."
+      }
+    },
+
     "BUTTON": "Ver más",
 
     "LIST": {
-      "CLASSIC_1X": {
-        "NAME": "Clásicas 1x / Natural",
+      "CLASSIC": {
+        "NAME": "Clásicas / Natural",
         "DESCRIPTION": "Aplicación de una extensión por cada pestaña natural para lograr un efecto delicado, elegante y muy natural."
       },
       "HYBRID": {
@@ -334,9 +364,28 @@
         "NAME": "Clásicas Naturales",
         "DESCRIPTION": "Diseño sutil que realza la belleza natural de tus pestañas, perfecto para un look elegante y discreto."
       },
-      "MEGA_HAWAIIAN": {
-        "NAME": "Mega Volumen / Hawaiano",
-        "DESCRIPTION": "Combinación del mega volumen con el efecto hawaiano para conseguir una mirada intensa, ligera y con gran dimensión."
+      "CLASSIC_1X1": {
+        "NAME": "Clásicas 1x1",
+        "DESCRIPTION": "Técnica clásica en la que se aplica una extensión sobre cada pestaña natural, logrando un acabado elegante, definido y completamente personalizado para resaltar tu mirada."
+      },
+      "NATURAL_EFFECT": {
+        "NAME": "Natural",
+        "DESCRIPTION": "Sigue la forma exacta de tu línea de pestañas natural. El largo se mantiene parejo, haciendo que las pestañas se vean más pobladas sin modificar la forma original de tus ojos."
+      },
+
+      "SQUIRREL_EFFECT": {
+        "NAME": "Ardilla",
+        "DESCRIPTION": "Similar al efecto ojo de gato, pero las pestañas más largas se colocan un poco antes de llegar a la esquina exterior del ojo, aproximadamente alineadas con el arco de la ceja, terminando con pestañas más cortas en el rabillo."
+      },
+
+      "CAT_EYE": {
+        "NAME": "Ojo de Gato",
+        "DESCRIPTION": "Las pestañas comienzan muy cortas en el lagrimal y aumentan gradualmente de longitud hasta alcanzar las más largas en la esquina exterior del ojo, creando un efecto alargado y elegante."
+      },
+
+      "DOLL_EYE": {
+        "NAME": "Efecto Muñeca",
+        "DESCRIPTION": "Las pestañas más largas se concentran en la parte central del ojo, justo sobre la pupila, y disminuyen de longitud hacia el lagrimal y la esquina exterior, logrando una mirada más abierta y redonda."
       }
     }
   }
