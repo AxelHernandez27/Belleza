@@ -221,9 +221,13 @@
       "TITLE": "Acerca de nuestros servicios",
       "DESCRIPTION": "En Edith Manrique Nail Studio ofrecemos servicios de uñas acrílicas diseñados para resaltar tu estilo y personalidad. Trabajamos con productos de alta calidad y cuidamos cada detalle para brindarte un acabado elegante, duradero y completamente personalizado."
     },
-
+    "GUIDE": {
+      "TITLE": "Formas de uñas",
+      "DESCRIPTION": "Descubre las diferentes formas de uñas disponibles. Cada diseño ofrece un estilo único y puede adaptarse a la forma de tus manos y a tus gustos. Si no sabes cuál elegir, con gusto te asesoraremos para encontrar la opción ideal."
+    },
     "SERVICES": {
-      "TITLE": "Nuestros Diseños"
+      "TITLE": "Nuestras Técnicas",
+      "DESCRIPTION": "Descubre las diferentes técnicas de extensiones de pestañas que ofrecemos. Cada una proporciona un acabado único y puede combinarse con distintos diseños según la forma de tus ojos y el efecto que desees. Durante tu cita te asesoraremos para elegir la opción que mejor resalte tu mirada."
     },
 
     "BOOKING": {
@@ -367,25 +371,30 @@
       "CLASSIC_1X1": {
         "NAME": "Clásicas 1x1",
         "DESCRIPTION": "Técnica clásica en la que se aplica una extensión sobre cada pestaña natural, logrando un acabado elegante, definido y completamente personalizado para resaltar tu mirada."
-      },
-      "NATURAL_EFFECT": {
+      }
+    },
+    "EYE_EFFECTS": {
+      "TITLE": "Diseños para la Forma de tus Ojos",
+      "SUBTITLE": "Una vez que elijas la técnica de aplicación de tus extensiones (Clásicas, Híbridas, Volumen, Mega Volumen, entre otras), podrás seleccionar el diseño que mejor realce la forma de tus ojos y el estilo que deseas lograr.",
+
+      "NATURAL": {
         "NAME": "Natural",
-        "DESCRIPTION": "Sigue la forma exacta de tu línea de pestañas natural. El largo se mantiene parejo, haciendo que las pestañas se vean más pobladas sin modificar la forma original de tus ojos."
+        "DESCRIPTION": "Sigue la forma exacta de tu línea de pestañas natural. El largo se mantiene uniforme, logrando una apariencia más poblada sin modificar la forma original de tus ojos."
       },
 
-      "SQUIRREL_EFFECT": {
+      "SQUIRREL": {
         "NAME": "Ardilla",
-        "DESCRIPTION": "Similar al efecto ojo de gato, pero las pestañas más largas se colocan un poco antes de llegar a la esquina exterior del ojo, aproximadamente alineadas con el arco de la ceja, terminando con pestañas más cortas en el rabillo."
+        "DESCRIPTION": "Similar al efecto ojo de gato, pero el punto de mayor longitud se encuentra antes de la esquina exterior del ojo, alineándose aproximadamente con el arco de la ceja."
       },
 
       "CAT_EYE": {
         "NAME": "Ojo de Gato",
-        "DESCRIPTION": "Las pestañas comienzan muy cortas en el lagrimal y aumentan gradualmente de longitud hasta alcanzar las más largas en la esquina exterior del ojo, creando un efecto alargado y elegante."
+        "DESCRIPTION": "Las pestañas comienzan cortas en el lagrimal y aumentan gradualmente de longitud hasta alcanzar su máximo en la esquina exterior del ojo."
       },
 
       "DOLL_EYE": {
         "NAME": "Efecto Muñeca",
-        "DESCRIPTION": "Las pestañas más largas se concentran en la parte central del ojo, justo sobre la pupila, y disminuyen de longitud hacia el lagrimal y la esquina exterior, logrando una mirada más abierta y redonda."
+        "DESCRIPTION": "Las pestañas más largas se concentran en el centro del ojo, justo sobre la pupila, creando una mirada más abierta y redondeada."
       }
     }
   }

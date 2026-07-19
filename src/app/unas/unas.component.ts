@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-unas',
@@ -10,6 +10,14 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './unas.component.css',
 })
 export class UnasComponent {
+  constructor(public translate: TranslateService) {}
+
+  get guiaUnas(): string {
+    return this.translate.currentLang === 'en'
+      ? 'assets/uñas/uñas-en.png'
+      : 'assets/uñas/uñas-es.jpeg';
+  }
+
   unas = [
     {
       id: 1,
@@ -57,7 +65,7 @@ export class UnasComponent {
       id: 8,
       servicio: 'NAILS.LIST.SEMIPERMANENT_GEL.NAME',
       descripcion: 'NAILS.LIST.SEMIPERMANENT_GEL.DESCRIPTION',
-      foto: 'assets/uñas/uñas24.jpeg', 
+      foto: 'assets/uñas/uñas24.jpeg',
     },
   ];
 }

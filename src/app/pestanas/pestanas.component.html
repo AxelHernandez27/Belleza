@@ -82,63 +82,100 @@
   </div>
 
 </section>
-  <!-- Servicios -->
-  <section id="lashes-details" class="makeup-section" data-aos="fade-up">
 
-    <h3>{{ 'LASHES.SERVICES.TITLE' | translate }}</h3>
+<!-- Servicios -->
+<section id="lashes-details" class="makeup-section" data-aos="fade-up">
 
-    <div class="makeup-list">
+  <h3>{{ 'LASHES.SERVICES.TITLE' | translate }}</h3>
 
-      <div
-        class="makeup-item"
-        data-aos="fade-right"
-        *ngFor="let pestana of pestanas">
+  <p class="services-description">
+    {{ 'LASHES.SERVICES.DESCRIPTION' | translate }}
+  </p>
 
-        <img
-          [src]="pestana.foto"
-          [alt]="pestana.servicio | translate">
+  <div class="makeup-list">
 
-        <div class="makeup-info">
+    <div
+      class="makeup-item"
+      data-aos="fade-right"
+      *ngFor="let pestana of pestanas">
 
-          <h4>
-            {{ pestana.servicio | translate }}
-          </h4>
+      <img
+        [src]="pestana.foto"
+        [alt]="pestana.servicio | translate">
 
-          <p>
-            {{ pestana.descripcion | translate }}
-          </p>
+      <div class="makeup-info">
 
-          <p>
-            <strong>
-              {{ 'LASHES.BOOKING.TITLE' | translate }}
-            </strong>
+        <h4>
+          {{ pestana.servicio | translate }}
+        </h4>
 
-            {{ 'LASHES.BOOKING.TEXT' | translate }}
+        <p>
+          {{ pestana.descripcion | translate }}
+        </p>
 
-            <a
-              href="https://www.instagram.com/edithmanriquemakeup?utm_source=qr&igsh=MTJoaHFuODFrcWt4eA=="
-              target="_blank"
-              rel="noopener">
+        <p>
+          <strong>
+            {{ 'LASHES.BOOKING.TITLE' | translate }}
+          </strong>
 
-              <br><br>
+          {{ 'LASHES.BOOKING.TEXT' | translate }}
 
-              &#64;edithmanriquemakeup
+          <a
+            href="https://www.instagram.com/edithmanriquemakeup?utm_source=qr&igsh=MTJoaHFuODFrcWt4eA=="
+            target="_blank"
+            rel="noopener">
 
-            </a>
-          </p>
+            <br><br>
 
-          <!--
-          <button (click)="irAlPortafolio(pestana.id)">
-            {{ 'LASHES.BUTTON' | translate }}
-          </button>
-          -->
+            &#64;edithmanriquemakeup
 
-        </div>
+          </a>
+        </p>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
+</section>
+
+<!-- Diseño de los ojos -->
+<section id="eye-effects" class="eye-effects" data-aos="fade-up">
+
+  <h3>
+    {{ 'LASHES.EYE_EFFECTS.TITLE' | translate }}
+  </h3>
+
+  <p class="eye-effects-description">
+    {{ 'LASHES.EYE_EFFECTS.SUBTITLE' | translate }}
+  </p>
+
+  <div class="eye-effects-grid">
+
+    <div
+      class="eye-card"
+      *ngFor="let efecto of efectosOjos">
+
+      <img
+        [src]="efecto.foto"
+        [alt]="efecto.servicio | translate">
+
+      <div class="eye-info">
+
+        <h4>
+          {{ efecto.servicio | translate }}
+        </h4>
+
+        <p>
+          {{ efecto.descripcion | translate }}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 </main>

@@ -96,30 +96,33 @@ export class PestanasComponent {
       servicio: 'LASHES.LIST.CLASSIC_1X1.NAME',
       descripcion: 'LASHES.LIST.CLASSIC_1X1.DESCRIPTION',
       foto: 'assets/pestañas/pestaña14.jpeg',
-    },
-    {
-      id: 9,
-      servicio: 'LASHES.LIST.NATURAL_EFFECT.NAME',
-      descripcion: 'LASHES.LIST.NATURAL_EFFECT.DESCRIPTION',
-      foto: 'assets/pestañas/pestaña20.jpeg',
-    },
-    {
-      id: 10,
-      servicio: 'LASHES.LIST.SQUIRREL_EFFECT.NAME',
-      descripcion: 'LASHES.LIST.SQUIRREL_EFFECT.DESCRIPTION',
-      foto: 'assets/pestañas/pestaña15.jpeg',
-    },
-    {
-      id: 11,
-      servicio: 'LASHES.LIST.CAT_EYE.NAME',
-      descripcion: 'LASHES.LIST.CAT_EYE.DESCRIPTION',
-      foto: 'assets/pestañas/pestaña19.jpeg',
-    },
-    {
-      id: 12,
-      servicio: 'LASHES.LIST.DOLL_EYE.NAME',
-      descripcion: 'LASHES.LIST.DOLL_EYE.DESCRIPTION',
-      foto: 'assets/pestañas/pestaña3.jpeg',
-    },
+    }
   ];
+
+  efectosOjos = [
+  {
+    id: 1,
+    servicio: 'LASHES.EYE_EFFECTS.NATURAL.NAME',
+    descripcion: 'LASHES.EYE_EFFECTS.NATURAL.DESCRIPTION',
+    foto: 'assets/pestañas/pestaña20.jpeg'
+  },
+  {
+    id: 2,
+    servicio: 'LASHES.EYE_EFFECTS.SQUIRREL.NAME',
+    descripcion: 'LASHES.EYE_EFFECTS.SQUIRREL.DESCRIPTION',
+    foto: 'assets/pestañas/pestaña15.jpeg'
+  },
+  {
+    id: 3,
+    servicio: 'LASHES.EYE_EFFECTS.CAT_EYE.NAME',
+    descripcion: 'LASHES.EYE_EFFECTS.CAT_EYE.DESCRIPTION',
+    foto: 'assets/pestañas/pestaña19.jpeg'
+  },
+  {
+    id: 4,
+    servicio: 'LASHES.EYE_EFFECTS.DOLL_EYE.NAME',
+    descripcion: 'LASHES.EYE_EFFECTS.DOLL_EYE.DESCRIPTION',
+    foto: 'assets/pestañas/pestaña3.jpeg'
+  }
+];
 }

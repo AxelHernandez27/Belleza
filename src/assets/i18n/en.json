@@ -220,7 +220,10 @@
       "TITLE": "About Our Services",
       "DESCRIPTION": "At Edith Manrique Nail Studio, we offer acrylic nail services designed to enhance your style and personality. We use high-quality products and pay close attention to every detail to provide elegant, durable, and fully personalized results."
     },
-
+    "GUIDE": {
+      "TITLE": "Nail Shapes",
+      "DESCRIPTION": "Discover the different nail shapes available. Each style offers a unique look and can be selected based on your hands, finger shape, and personal preferences. If you're unsure which one suits you best, we'll be happy to help you choose."
+    },
     "SERVICES": {
       "TITLE": "Our Nail Designs"
     },
@@ -290,7 +293,8 @@
     },
 
     "SERVICES": {
-      "TITLE": "Our Styles"
+      "TITLE": "Our Techniques",
+      "DESCRIPTION": "Explore the different eyelash extension techniques we offer. Each technique creates a unique look and can be combined with different eye designs based on your eye shape and the effect you want. During your appointment, we'll help you choose the option that best enhances your eyes."
     },
 
     "BOOKING": {
@@ -365,25 +369,30 @@
       "CLASSIC_1X1": {
         "NAME": "Classic 1x1",
         "DESCRIPTION": "A classic lash extension technique where one extension is applied to each natural lash, creating a defined, elegant, and natural-looking finish tailored to enhance your eyes."
-      },
-      "NATURAL_EFFECT": {
+      }
+    },
+    "EYE_EFFECTS": {
+      "TITLE": "Eye Design Styles",
+      "SUBTITLE": "After choosing your eyelash extension technique (Classic, Hybrid, Volume, Mega Volume, and more), you can select the eye design that best enhances your natural eye shape and desired look.",
+
+      "NATURAL": {
         "NAME": "Natural",
-        "DESCRIPTION": "Follows the exact shape of your natural lash line. The length remains even, making your lashes appear fuller without changing the natural shape of your eyes."
+        "DESCRIPTION": "Follows your natural lash line. The length remains even across the eye, creating a fuller appearance without changing your eye shape."
       },
 
-      "SQUIRREL_EFFECT": {
+      "SQUIRREL": {
         "NAME": "Squirrel",
-        "DESCRIPTION": "Similar to the Cat Eye style, but the longest lashes are placed slightly before the outer corner of the eye, approximately aligned with the eyebrow arch, finishing with shorter lashes at the outer edge."
+        "DESCRIPTION": "Similar to the cat-eye style, but the longest lashes are placed slightly before the outer corner, approximately aligned with the eyebrow arch."
       },
 
       "CAT_EYE": {
         "NAME": "Cat Eye",
-        "DESCRIPTION": "The lashes start very short at the inner corner and gradually increase in length until reaching the longest lashes at the outer corner, creating an elongated and elegant look."
+        "DESCRIPTION": "Lashes start short at the inner corner and gradually increase in length toward the outer corner, creating an elongated eye effect."
       },
 
       "DOLL_EYE": {
         "NAME": "Doll Eye",
-        "DESCRIPTION": "The longest lashes are placed in the center of the eye, directly above the pupil, and gradually become shorter toward both the inner and outer corners, creating a wide-eyed appearance."
+        "DESCRIPTION": "The longest lashes are concentrated in the center of the eye, above the pupil, creating a wider and more open-eyed appearance."
       }
     }
   }
