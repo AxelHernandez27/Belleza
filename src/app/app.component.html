@@ -4,12 +4,36 @@
   </div>
 
   <nav class="navbar-links">
-    <a routerLink="/inicio">{{ 'NAVBAR.HOME' | translate }}</a>
-    <a routerLink="/servicios">{{ 'NAVBAR.SERVICES' | translate }}</a>
-    <a routerLink="/unas">{{ 'NAVBAR.NAILS' | translate }}</a>
-    <a routerLink="/pestanas">{{ 'NAVBAR.LASHES' | translate }}</a>
-    <a routerLink="/portafolio">{{ 'NAVBAR.PORTFOLIO' | translate }}</a>
-    <a routerLink="/contacto">{{ 'NAVBAR.CONTACT' | translate }}</a>
+   <a routerLink="/inicio"
+   routerLinkActive="active"
+   [routerLinkActiveOptions]="{ exact: true }">
+  {{ 'NAVBAR.HOME' | translate }}
+</a>
+
+<a routerLink="/servicios"
+   routerLinkActive="active">
+  {{ 'NAVBAR.SERVICES' | translate }}
+</a>
+
+<a routerLink="/unas"
+   routerLinkActive="active">
+  {{ 'NAVBAR.NAILS' | translate }}
+</a>
+
+<a routerLink="/pestanas"
+   routerLinkActive="active">
+  {{ 'NAVBAR.LASHES' | translate }}
+</a>
+
+<a routerLink="/portafolio"
+   routerLinkActive="active">
+  {{ 'NAVBAR.PORTFOLIO' | translate }}
+</a>
+
+<a routerLink="/contacto"
+   routerLinkActive="active">
+  {{ 'NAVBAR.CONTACT' | translate }}
+</a>
   </nav>
 
   <div class="lang-switch">
