@@ -225,11 +225,6 @@
       "TITLE": "Formas de uñas",
       "DESCRIPTION": "Descubre las diferentes formas de uñas disponibles. Cada diseño ofrece un estilo único y puede adaptarse a la forma de tus manos y a tus gustos. Si no sabes cuál elegir, con gusto te asesoraremos para encontrar la opción ideal."
     },
-    "SERVICES": {
-      "TITLE": "Nuestras Técnicas",
-      "DESCRIPTION": "Descubre las diferentes técnicas de extensiones de pestañas que ofrecemos. Cada una proporciona un acabado único y puede combinarse con distintos diseños según la forma de tus ojos y el efecto que desees. Durante tu cita te asesoraremos para elegir la opción que mejor resalte tu mirada."
-    },
-
     "BOOKING": {
       "TITLE": "¿Quieres agendar una cita?",
       "TEXT": "Escríbenos por Instagram:"
@@ -294,8 +289,10 @@
       "TITLE": "Guía de estilos de pestañas",
       "DESCRIPTION": "Conoce las diferencias entre cada estilo de extensiones de pestañas y descubre cuál se adapta mejor al resultado que deseas."
     },
-    "SERVICES": {
-      "TITLE": "Nuestros Diseños"
+    
+   "SERVICES": {
+      "TITLE": "Nuestras Técnicas",
+      "DESCRIPTION": "Descubre las diferentes técnicas de extensiones de pestañas que ofrecemos. Cada una proporciona un acabado único y puede combinarse con distintos diseños según la forma de tus ojos y el efecto que desees. Durante tu cita te asesoraremos para elegir la opción que mejor resalte tu mirada."
     },
 
     "BOOKING": {
