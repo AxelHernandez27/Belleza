@@ -189,6 +189,45 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
       titulo: 'PORTAFOLIO.CERTIFICATES.CERT_4',
       imagen: 'assets/Nuevos19.jpeg',
     },
+     {
+      id: 20,
+      titulo: '',
+      imagen: 'assets/nuevos20.jpeg',
+    },
+     {
+      id: 21,
+      titulo: '',
+      imagen: 'assets/nuevos21.jpeg',
+    },
+     {
+      id: 22,
+      titulo: '',
+      imagen: 'assets/nuevos22.jpeg',
+    },
+     {
+      id: 23,
+      titulo: '',
+      imagen: 'assets/nuevos23.jpeg',
+    },
+     {
+      id: 24,
+      titulo: '',
+      imagen: 'assets/nuevos24.jpeg',
+    },
+     {
+      id: 25,
+      titulo: '',
+      imagen: 'assets/nuevos25.jpeg',
+    },
+     {
+      id: 26,
+      titulo: '',
+      imagen: 'assets/nuevos26.jpeg',
+    }, {
+      id: 27,
+      titulo: '',
+      imagen: 'assets/nuevos27.jpeg',
+    },
   ];
 
   peinadosAlbum = [
@@ -256,6 +295,16 @@ export class PortafolioComponent implements AfterViewInit, OnInit {
       id: 13,
       titulo: '',
       imagen: 'assets/peinado14.jpeg',
+    },
+        {
+      id: 14,
+      titulo: '',
+      imagen: 'assets/peinado15.jpeg',
+    },
+        {
+      id: 15,
+      titulo: '',
+      imagen: 'assets/peinado16.jpeg',
     },
   ];
 
